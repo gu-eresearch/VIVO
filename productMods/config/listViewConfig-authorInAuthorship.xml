@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-select>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;    
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX gu: &lt;http://griffith.edu.au/ontology/hubextensions/&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        SELECT DISTINCT ?displayRankAnnot
+        				<collated> ?subclass </collated>
+        				?subclassLabel
+        				?authorship             
+                        ?infoResource 
+                        ?infoResourceName 
+                        ?dateTime 
+                        ?journalName
+                        ?issn
+                        ?pageEnd
+                        ?pageStart
+                        ?volume
+                        ?hideThis
+                        (GROUP_CONCAT(?subjectAreaName;SEPARATOR=", ") AS ?subjectAreaNames)
+                       # (GROUP_CONCAT(?authorName) AS ?authorNames)
+                        
+                        WHERE {
+            ?subject ?property ?authorship  .
+				?authorship core:linkedInformationResource ?infoResource .                      
+				?infoResource rdfs:label ?infoResourceName .
+				OPTIONAL { ?subclass rdfs:subClassOf core:InformationResource .
+						  ?infoResource a ?subclass  .
+						  ?subclass vitro:displayRankAnnot ?displayRankAnnot .
+						  ?subclass rdfs:label ?subclassLabel .
+				} 
+				<collated> 
+			    OPTIONAL {  ?infoResource vitro:mostSpecificType ?subclass .
+						    ?subclass rdfs:subClassOf core:InformationResource
+			    }     
+                </collated>
+				OPTIONAL { ?infoResource core:dateTimeValue ?dateTimeValue .
+						  ?dateTimeValue core:dateTime ?dateTime  
+				} 
+				OPTIONAL { ?infoResource gu:book_journal_name ?journalName  }
+				
+				OPTIONAL { ?infoResource bibo:issn ?issn . }
+				OPTIONAL { ?infoResource bibo:pageEnd ?pageEnd . }
+				OPTIONAL { ?infoResource bibo:pageStart ?pageStart . }
+				OPTIONAL { ?infoResource bibo:volume ?volume . }
+
+                OPTIONAL { ?authorship core:hideFromDisplay ?hideThis }    
+				
+				
+				OPTIONAL { ?infoResource core:hasSubjectArea ?subjectArea .
+							?subjectArea rdfs:label ?subjectAreaName .}
+                            
+				NOT EXISTS { ?authorship core:hideFromDisplay ?hideThis }
+
+			   #	 OPTIONAL { ?infoResource core:informationResourceInAuthorship ?linkedAuthorShip .
+				#			?linkedAuthorShip core:linkedAuthor ?linkedAuthor .
+				#			?linkedAuthorShip core:authorRank ?rank . 
+				#			?linkedAuthor rdfs:label ?authorName . }
+                                                                       
+        } GROUP BY  	?displayRankAnnot
+        				?subclass 
+        				?subclassLabel
+        				?authorship             
+                        ?infoResource 
+                        ?infoResourceName 
+                        ?dateTime 
+                        ?journalName
+                        ?issn
+                        ?pageEnd
+                        ?pageStart
+                        ?volume
+        ORDER BY <collated> ?subclassLabel </collated> DESC(?dateTime) ?infoResourceName  ?rank 
+    </query-select>
+
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;   
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        CONSTRUCT {
+            ?subclass rdfs:subClassOf core:InformationResource .
+            ?subclass vitro:displayRankAnnot ?displayRankAnnot .
+            ?subclass rdfs:label ?subclassLabel .
+        } WHERE {
+            ?subclass rdfs:subClassOf core:InformationResource .
+            ?subclass vitro:displayRankAnnot ?displayRankAnnot .
+            ?subclass rdfs:label ?subclassLabel .
+        }
+    </query-construct>
+
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX gu: &lt;http://griffith.edu.au/ontology/hubextensions/&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        CONSTRUCT { 
+            ?subject ?property ?authorship .  
+            ?authorship ?authorshipProperty ?authorshipValue .
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?infoResource rdfs:label ?infoResourceName .
+            ?infoResource gu:book_journal_name ?journalName .
+            ?infoResource bibo:issn ?issn . 
+            ?infoResource bibo:pageEnd ?pageEnd . 
+            ?infoResource bibo:pageStart ?pageStart .
+            ?infoResource bibo:volume ?volume . 
+        } WHERE {
+            {
+               ?subject ?property ?authorship 
+            }
+            UNION {
+               ?subject ?property ?authorship .
+               ?authorship ?authorshipProperty ?authorshipValue .
+            } UNION {
+               ?subject ?property ?authorship .
+               ?authorship core:linkedInformationResource ?infoResource .
+               ?infoResource rdfs:label ?infoResourceName 
+            } UNION {
+               ?subject ?property ?authorship .
+               ?authorship core:linkedInformationResource ?infoResource .
+               ?infoResource gu:book_journal_name ?journalName 
+            } UNION {
+               ?subject ?property ?authorship .
+               ?authorship core:linkedInformationResource ?infoResource .
+               ?infoResource bibo:issn ?issn . 
+            } UNION {
+               ?subject ?property ?authorship .
+               ?authorship core:linkedInformationResource ?infoResource .
+               ?infoResource bibo:pageEnd ?pageEnd . 
+            } UNION {
+               ?subject ?property ?authorship .
+               ?authorship core:linkedInformationResource ?infoResource .
+               ?infoResource bibo:pageStart ?pageStart . 
+            } UNION {
+               ?subject ?property ?authorship .
+               ?authorship core:linkedInformationResource ?infoResource .
+               ?infoResource bibo:volume ?volume . 
+            } 
+            
+        } 
+    </query-construct>
+
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        CONSTRUCT { 
+            ?subject ?property ?authorship .  
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?infoResource a ?subclass  
+        } WHERE {
+            ?subject ?property ?authorship .
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?subclass rdfs:subClassOf core:InformationResource .
+            ?infoResource a ?subclass  
+        } 
+    </query-construct>
+    
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        CONSTRUCT { 
+            ?subject ?property ?authorship .  
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?infoResource core:hasSubjectArea ?subjectArea .
+            ?subjectArea rdfs:label ?subjectAreaName .
+        } WHERE {
+            ?subject ?property ?authorship .
+		   	?authorship core:linkedInformationResource ?infoResource .
+		   	?infoResource core:hasSubjectArea ?subjectArea .
+		   	?subjectArea rdfs:label ?subjectAreaName .
+        } 
+    </query-construct>
+    <!--  
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        CONSTRUCT { 
+           ?subject ?property ?authorship .
+		   ?authorship core:linkedInformationResource ?infoResource .
+		   ?infoResource core:informationResourceInAuthorship ?linkedAuthorShip .
+			?linkedAuthorShip core:linkedAuthor ?author .
+			?linkedAuthorShip core:authorRank ?rank . 
+			?author rdfs:label ?authorName .
+        } WHERE {
+            ?subject ?property ?authorship .
+		   	?authorship core:linkedInformationResource ?infoResource .
+			?infoResource core:informationResourceInAuthorship ?linkedAuthorShip .
+			?linkedAuthorShip core:linkedAuthor ?author .
+			?linkedAuthorShip core:authorRank ?rank . 
+			?author rdfs:label ?authorName .
+		}  ORDER BY ?infoResource ?rank 
+    </query-construct>
+    -->
+  
+	 <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        CONSTRUCT { 
+            ?subject ?property ?authorship .  
+            ?infoResource vitro:mostSpecificType ?subclass .
+            ?authorship core:linkedInformationResource ?infoResource 
+        } WHERE {
+            ?subject ?property ?authorship .
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?infoResource vitro:mostSpecificType ?subclass .
+            ?subclass rdfs:subClassOf core:InformationResource  
+        } 
+    </query-construct>
+    
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+        CONSTRUCT { 
+            ?subject ?property ?authorship .  
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?infoResource core:dateTimeValue ?dateTimeValue .
+            ?dateTimeValue core:dateTime ?dateTime  
+        } WHERE {
+            ?subject ?property ?authorship .
+            ?authorship core:linkedInformationResource ?infoResource .
+            ?infoResource core:dateTimeValue ?dateTimeValue .
+            ?dateTimeValue core:dateTime ?dateTime  
+        } 
+    </query-construct>
+    
+    <template>propStatement-authorInAuthorship.ftl</template>
+</list-view-config>

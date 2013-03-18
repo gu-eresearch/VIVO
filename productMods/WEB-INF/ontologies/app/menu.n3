@@ -1,0 +1,618 @@
+@prefix pvs:     <http://vivoweb.org/ontology/provenance-support#> .
+@prefix geo:     <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix scires:  <http://vivoweb.org/ontology/scientific-research#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix fabio:   <http://purl.org/spar/fabio/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix guhubext:  <http://griffith.edu.au/ontology/hubextensions/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix c4o:     <http://purl.org/spar/c4o/> .
+@prefix vitro-public:  <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix vivo:    <http://vivoweb.org/ontology/core#> .
+@prefix dcelem:  <http://purl.org/dc/elements/1.1/> .
+@prefix ero:     <http://purl.obolibrary.org/obo/> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1/>
+      a       owl:Ontology ;
+      rdfs:label "Vitro display ontology" ;
+      owl:versionInfo "1.1" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#parameterValue>
+      a       owl:DatatypeProperty ;
+      rdfs:label "parameter value" .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5878>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Publications" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "5"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n5873> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Indicates that a page requires a body template." ;
+      rdfs:domain <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      rdfs:label "Body Template" .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n2421>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+              <http://vitro.mannlib.cornell.edu/ns/default#n2423> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#isSelfContainedTemplate>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "menupage.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Researchers" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/researchers" .
+
+rdfs:label
+      a       owl:AnnotationProperty , owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#restrictResultsByClass>
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#HomeMenuItem>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Home" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              1 , "1"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Home> .
+
+owl:DatatypeProperty
+      a       owl:DatatypeProperty , owl:Class .
+
+rdfs:comment
+      a       owl:AnnotationProperty , owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+      a       owl:DatatypeProperty ;
+      rdfs:label "menu position" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#forClassGroup>
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ExternallyLinkedNamespace>
+      a       owl:Class ;
+      rdfs:label "Externally Linked Namespace" .
+
+<java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.BrowseDataGetter>
+      rdfs:label "Browse Page" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#HomePage>
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5873>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#isSelfContainedTemplate>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "menupage.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Publications" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/publications" .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5590>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+              <http://vitro.mannlib.cornell.edu/ns/default#n5591> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Help" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/help" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#DefaultMenu>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#MainMenu> ;
+      rdfs:label "Default Menu" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasElement>
+              <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#HomeMenuItem> , <http://vitro.mannlib.cornell.edu/ns/default#n7794> , <http://vitro.mannlib.cornell.edu/ns/default#n299> , <http://vitro.mannlib.cornell.edu/ns/default#n5618> , <http://vitro.mannlib.cornell.edu/ns/default#n4974> , <http://vitro.mannlib.cornell.edu/ns/default#n5878> , <http://vitro.mannlib.cornell.edu/ns/default#n3955> , <http://vitro.mannlib.cornell.edu/ns/default#n5273> , <http://vitro.mannlib.cornell.edu/ns/default#n2449> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1/#Menu>
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n299>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "About" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "8"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n298> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#InternalClassesPage>
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n4974>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Collections" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "6"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n4946> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n3331>
+      a       <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#query>
+              """PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:   <http://www.w3.org/2002/07/owl#>
+PREFIX swrl:  <http://www.w3.org/2003/11/swrl#>
+PREFIX swrlb: <http://www.w3.org/2003/11/swrlb#>
+PREFIX vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#>
+PREFIX p.1: <http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#>
+PREFIX p.2: <http://purl.org/asc/1297.0/>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX c4o: <http://purl.org/spar/c4o/>
+PREFIX dcelem: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX p.3: <http://purl.org/asc/1297.0/2008/for/>
+PREFIX p.4: <http://purl.org/asc/1297.0/for/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX geo: <http://aims.fao.org/aos/geopolitical.owl#>
+PREFIX guhubext: <http://griffith.edu.au/ontology/hubextensions/>
+PREFIX pvs: <http://vivoweb.org/ontology/provenance-support#>
+PREFIX ero: <http://purl.obolibrary.org/obo/>
+PREFIX p.5: <http://purl.org/asc/1297.0/1998/rfcd/>
+PREFIX scires: <http://vivoweb.org/ontology/scientific-research#>
+PREFIX p.6: <http://purl.org/asc/1297.0/1998/seo/>
+PREFIX p.7: <http://purl.org/asc/1297.0/2008/seo/>
+PREFIX p.8: <http://purl.org/asc/1297.0/seo/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vitro-public: <http://vitro.mannlib.cornell.edu/ns/vitro/public#>
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+
+#
+# This example query gets 20 geographic locations
+# and (if available) their labels
+#
+SELECT DISTINCT ?x (str(?label) as ?name)
+WHERE
+{
+      ?x a guhubext:ResearchHubPerson .
+      ?x rdfs:label ?label .
+}
+ORDER BY ?label
+
+""" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#saveToVar>
+              "queryResults" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#restrictResultsByInternalClass>
+      a       owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasElement>
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Value for HTML title element." ;
+      rdfs:domain <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      rdfs:label "title" .
+
+owl:ObjectProperty
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#MainMenu>
+      a       owl:Class ;
+      vitro:customDisplayViewAnnot
+              """
+  		individual-menu.ftl
+  	"""^^xsd:string .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1/excludeClass>
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#pageListPage>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#cannotDeletePage>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+              <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#pageListData> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "pageList.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Pages" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/pageList" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Home>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> , <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#HomePage> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#cannotDeletePage>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+              <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#homeDataGetter> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Home" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/" .
+
+rdfs:domain
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#pageListData>
+      a       <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#query>
+              """
+    PREFIX display: <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#> 
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    SELECT ?listedPageUri ?listedPageTitle ?listedPageUrlMapping ?listedPageTemplate ?listedPageMenuItem ?listedPageCannotDeletePage
+    WHERE { 
+        ?listedPageUri a display:Page .
+        OPTIONAL{ ?listedPageUri display:urlMapping ?listedPageUrlMapping. }
+        OPTIONAL{ ?listedPageUri display:title  ?listedPageTitle. }  
+        OPTIONAL {?listedPageUri display:requiresBodyTemplate ?listedPageTemplate .}
+        OPTIONAL {?listedPageMenuItem display:toPage ?listedPageUri .}
+        OPTIONAL {?listedPageUri display:cannotDeletePage ?listedPageCannotDeletePage .}
+     }  ORDER BY ?listedPageTitle """ ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#queryModel>
+              <vitro:contextDisplayModel> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#saveToVar>
+              "pages" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#listViewConfigFile>
+      a       owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1/includeClass>
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n3955>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Projects" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "4"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n3957> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDefaultProfilePageType>
+      a       owl:ObjectProperty ;
+      rdfs:range <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ProfilePageType> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n2449>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Researchers" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "2"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n2421> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n3359>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+              <http://vitro.mannlib.cornell.edu/ns/default#n3331> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Test Query" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/testquery" .
+
+<java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.IndividualsForClassesDataGetter>
+      rdfs:label "Class Group Page - Selected Classes" .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5591>
+      a       <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.FixedHTMLDataGetter> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#htmlValue>
+              """<div id=\"helpContent\">
+                    <h1>Research Hub Help</h1>
+                    
+                    <p>Are you a new user to the Research Hub? A good way to get started with the Hub is to read our <a href=\"/quick-start.jsp\" title=\"Read The Quick Start Guide\">Quick Start Guide</a>.  Otherwise, below is some more information and common questions.</p>
+                    
+                    <h2>Frequently Asked Questions <small><em>(click to read)</em></small></h2>
+                    
+                    <section id=\"FAQ\">
+                        <h3 id=\"FAQ1\" class=\"faq_question\">What is the Griffith Research Hub?</h3>
+                        <article class=\"faq_answer\">
+                            <p>The Griffith Research Hub is a rich and informative guide to the University’s expertise in a comprehensive array of academic fields. The Research Hub contains pages profiling the activities of individual researchers. A profile page in the Research Hub automatically includes: publications, projects, research outputs and activities, contact details and more. </p>
+                        </article>
+
+                        <h3 id=\"FAQ2\" class=\"faq_question\">Where does the information in the Research Hub come from?</h3>
+                        <article class=\"faq_answer\">
+                            <p>The Hub draws information automatically from Griffith University’s enterprise data sources including Office for Research’s Research Administration Database, My Research Publications, and the databases of the Office for Human Resources Management. </p>
+                        </article>
+                        
+                        <h3 id=\"FAQ3\" class=\"faq_question\">Do all Griffith researchers have a profile page in the Hub?</h3>
+                        <article class=\"faq_answer\">
+                            <p>Not all academics and researchers at Griffith have a profile page in the Research Hub. The researchers who have a profile page in the Hub have been assessed as \"research active\". There are a variety of measures used to calculate research activity. If you require a Hub profile, please contact your Dean or Head of School/Element. If you are an active researcher who is new to Griffith, you may not have a profile in the Hub because your data has not yet appeared in the Research Activity System (please see the specific Help topic about this).</p>
+                        </article>
+                    
+                        <h3 id=\"FAQ4\" class=\"faq_question\">How can I change information in my Hub profile page?</h3>
+                        <article class=\"faq_answer\">
+                            <p>The information presented on your profile page is obtained from different systems within the University and automatically includes, publications, projects, research outputs and activities, contact details and more. Some of this information is editable by you or someone you nominate to edit on your behalf. The source of the information determines whether you are able to change it from your profile page. Please download the <a target=\"_blank\" href=\"/themes/gu/docs/researchhub-guide-edit.pdf\">Hub Quick Start Guide</a> for instructions on how to edit information in your profile.</p>
+                        </article>
+                    
+                    
+                        <h3 id=\"FAQ5\" class=\"faq_question\">As a researcher who recently joined Griffith, how can I get a profile page in the Hub?</h3>
+                        <article class=\"faq_answer\">
+                            <p>If you are a researcher who has recently joined Griffith University, you may not yet have a profile page in the Griffith Research Hub. The researchers who have a profile page in the Hub have been assessed as \"research active\". In order to assess your research activity, your data needs to appear in our Research Activity System. You can check your data in the MyPubs system (accessed via the Griffith portal). If the data is incomplete, there are a number of ways to get your data into the Research Activity System:</p>
+                            <ul>
+                                <li>1. Ask your Head of Element if there is a staff member who can enter the data on your behalf.</li>
+                                <li>2. Enter the data yourself.</li>
+                                <li>3. Approach the academic librarian assigned to your discipline.</li>
+                                <li>4. Refer the matter to your Research Dean.</li>
+                            </ul>
+                        </article>
+                    
+                        <h3 id=\"FAQ6\" class=\"faq_question\">How can I find a supervisor to commence a PhD or other research degree at Griffith? </h3>
+                        <article class=\"faq_answer\">
+                            <p>Griffith University is one of Australia's top ten research universities, receiving a rating of world standard or better in 45 fields of research in the Excellence in Research for Australia 2010 National Report. By this measure Griffith is in the top 10 for Australian universities and more than 90% of our academic staff are working in these fields.</p>
+                            <p>We have a supportive research community and a vibrant research culture which provides an enriching environment for students. Many of our supervisors are at the forefront of scientific discovery, and go through a comprehensive accreditation process that supports the highest standards of supervision.</p>
+                     
+                            <p>Griffith offers a wide range of research degrees including: Doctor of Philosophy (PhD);
+                            Professional Doctorates in Education, Visual Arts, and Music; Master of Philosophy; and
+                            Research Masters degrees in Higher Education, Visual Arts, and Music.</p>
+                             
+                            <p>You can browse the Research Hub or search the Hub by subject keyword to find potential supervisors in your subject discipline. For further information on research degrees, or to enrol, go to: http://www.griffith.edu.au/higher-degrees-research</p>
+                    
+                        </article>
+                    
+                        <h3 id=\"FAQ7\" class=\"faq_question\">Who manages the Hub?</h3>
+                        <article class=\"faq_answer\">
+                            <p>The Griffith Research Hub is managed by staff from eResearch Services, Scholarly Information and Research, Information Services at Griffith University. The Hub is governed by a Project Board which is chaired by Dr. Vicki Pattemore, Director, Office for Research.</p>
+                        </article>
+                    
+                        <h3 id=\"FAQ8\" class=\"faq_question\">Who can I contact to provide feedback or ask for assistance?</h3>
+                        <article class=\"faq_answer\">
+                            <p>The Research Hub team welcomes your comments and suggestions. You can provide feedback, or ask for assistance, by clicking the Contact Us tab.</p>
+                        </article>
+                    </section>
+                </div>
+<script type=\"text/javascript\">
+        $(document).ready(function() {
+           $('#helpMenuLink').addClass('selected'); 
+           
+            $('#helpContent').find('.faq_answer').hide();
+           
+            $('#helpContent').find('h3.faq_question').click(function() {
+                $(this).next('.faq_answer').slideToggle();
+                return false;
+            })
+
+         });
+            
+        
+    </script>""" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#saveToVar>
+              "helpContentVar" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1/#hasParameter>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      rdfs:range <http://vitro.mannlib.cornell.edu/ontologies/display/1.1/#parameter> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#homeDataGetter>
+      a       <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.BrowseDataGetter> .
+
+owl:Ontology
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Values from HttpRequest.getPathInfo() will be mapped to values from urlMapping." .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5618>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Help" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "9"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n5590> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n2423>
+      a       <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#forClassGroup>
+              <http://research-hub-dev.griffith.edu.au/individual/vitroClassGroupresearchers> .
+
+owl:AnnotationProperty
+      a       owl:Class .
+
+rdfs:range
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5273>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Services" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "7"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n5269> .
+
+rdfs:subPropertyOf
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#servicesDataGetter>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ClassGroupPage> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#forClassGroup>
+              <http://research-hub.griffith.edu.au/individual/vitroClassGroupservices> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n298>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+              <http://vitro.mannlib.cornell.edu/ns/default#n294> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "About" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/about" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      rdfs:range <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ProfilePageType>
+      a       owl:Class ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:oneOf (<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#standard> <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#quickView>)
+              ] .
+
+<java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.ClassGroupPageData>
+      rdfs:label "Class Group Page" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#excludeClass>
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#standard>
+      a       owl:NamedIndividual , <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ProfilePageType> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n7794>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+              "Groups" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition>
+              "3"^^xsd:int ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#toPage>
+              <http://vitro.mannlib.cornell.edu/ns/default#n7796> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n4946>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#isSelfContainedTemplate>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "menupage.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Collections" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/collections" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#getIndividualsForClass>
+      a       owl:ObjectProperty .
+
+<java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.SparqlQueryDataGetter>
+      rdfs:label "Sparql Query Results" .
+
+owl:topDataProperty
+      a       owl:DatatypeProperty .
+
+owl:topObjectProperty
+      a       owl:ObjectProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#IndividualsForClassesPage>
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#parameterName>
+      a       owl:DatatypeProperty ;
+      rdfs:label "parameter name" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page>
+      a       owl:Class ;
+      rdfs:comment "Class of pages." ;
+      rdfs:label "Page" .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n7796>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#isSelfContainedTemplate>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "menupage.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Groups" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/groups" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ClassGroupPage>
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#hasDataGetter>
+      a       owl:ObjectProperty .
+
+owl:Class
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n3957>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#isSelfContainedTemplate>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "menupage.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Projects" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/projects" .
+
+owl:versionInfo
+      a       owl:AnnotationProperty , owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1/#parameter>
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#quickView>
+      a       owl:NamedIndividual , <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ProfilePageType> .
+
+owl:NamedIndividual
+      a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n5269>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#isSelfContainedTemplate>
+              "true" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#requiresBodyTemplate>
+              "menupage.ftl" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#title>
+              "Services" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#urlMapping>
+              "/services" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#linkText>
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Text to display to a link." .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#projectssDataGetter>
+      a       <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ClassGroupPage> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#forClassGroup>
+              <http://research-hub.griffith.edu.au/individual/vitroClassGroupprojects> .
+
+<http://vitro.mannlib.cornell.edu/ns/default#n294>
+      a       <java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.FixedHTMLDataGetter> ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#htmlValue>
+              """<h2>About the Research Hub</h2>
+<p>Welcome to Griffith University's Research Hub, a rich and informative guide to the 
+University's expertise in a comprehensive array of academic fields. The site lists the 
+research focus of our staff, their publication histories and research projects. Use the hub 
+to make contact with Griffith experts and potential postgraduate research supervisors. 
+Search by keyword, discipline, name or field of research expertise.</p>
+
+<p>Griffith University is a Top 10 Australian research university. Analysis of the 
+Excellence in Research for Australia 2010 National Report places Griffith among Australia's 
+most highly regarded universities, with close to 93 per cent of staff aligned with fields of 
+research rated world standard or above. Griffith is on track to be a world leader in research fields 
+including quantum physics, drug discovery and infectious diseases, health, trade and 
+development, Asian studies, climate change adaptation, water science, criminology, 
+sustainable tourism, music and the arts.</p>
+
+<p>We encourage you to explore the outstanding people and research activity featured 
+on the Research Hub.</p>
+
+
+<p>See more information on the <a href=\"http://eresearch.griffith.edu.au/?
+q=content/research-hub\">Research Hub Project Communications page</a> or if you have a question or comment <a href=\"/contact\">contact us</a>.</p>
+
+</div>""" ;
+      <http://vitro.mannlib.cornell.edu/ontologies/display/1.1#saveToVar>
+              "aboutContentVar" .
+
+<http://vitro.mannlib.cornell.edu/ontologies/display/1.1#NavigationElement>
+      a       owl:Class ;
+      rdfs:comment "This represents a menu item or other general navigation item." ;
+      rdfs:label "Navigation Element" .
+
+<java:edu.cornell.mannlib.vitro.webapp.utils.dataGetter.InternalClassesDataGetter>
+      rdfs:label "Class Group Page - Institutional Internal Class" .

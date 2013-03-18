@@ -1,0 +1,392 @@
+@prefix afn:     <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix :        <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix scires:  <http://vivoweb.org/ontology/scientific-research#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcelem:  <http://purl.org/dc/elements/1.1/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix geo:     <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix pvs:     <http://vivoweb.org/ontology/provenance-support#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix core:    <http://vivoweb.org/ontology/core#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix ero:     <http://purl.obolibrary.org/obo/> .
+@prefix roles:   <http://vitro.mannlib.cornell.edu/ns/vitro/role#> .
+@prefix vivoweb: <http://vivoweb.org/ontology#> .
+
+@prefix guhub:   <http://research-hub.griffith.edu.au/individual/> .
+@prefix guhubext:  <http://griffith.edu.au/ontology/hubextensions/> .
+@prefix ands:    <http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#> .
+
+# START CLASSGROUP CONFIG
+# SPARQL TO EXTRACT CLASSGROUPS
+# PREFIX vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#>
+# CONSTRUCT { ?s vitro:inClassGroup ?o  }
+#  WHERE
+#   { ?s vitro:inClassGroup ?o }
+
+#Researchers
+
+guhubext:ProfiledResearcher vitro:inClassGroup guhub:vitroClassGroupresearchers .
+guhubext:ResearchHubPerson  vitro:inClassGroup guhub:vitroClassGroupresearchers .
+
+
+#Groups
+
+guhubext:ResearchHubGroup vitro:inClassGroup guhub:vitroClassGroupgroups .
+
+
+#Services
+
+core:Service vitro:inClassGroup guhub:vitroClassGroupservices .
+
+
+#Projects
+
+#core:Project                     vitro:inClassGroup guhub:vitroClassGroupprojects .
+#guhubext:NonResearchGrantProject vitro:inClassGroup guhub:vitroClassGroupprojects .
+#guhubext:CommercialProject       vitro:inClassGroup guhub:vitroClassGroupprojects .
+#guhubext:GrantProject             vitro:inClassGroup guhub:vitroClassGroupprojects .
+#guhubext:DonationProject         vitro:inClassGroup guhub:vitroClassGroupprojects .
+#guhubext:ExpressionOfInterest    vitro:inClassGroup guhub:vitroClassGroupprojects .
+#guhubext:NotIdentifiedProject    vitro:inClassGroup guhub:vitroClassGroupprojects .
+guhubext:ResearchHubProject       vitro:inClassGroup guhub:vitroClassGroupprojects .
+
+
+#Collections
+
+#ands:ResearchData             vitro:inClassGroup guhub:vitroClassGroupcollections .
+ands:researchDataSet           vitro:inClassGroup guhub:vitroClassGroupcollections .
+ands:researchRecordsCollection vitro:inClassGroup guhub:vitroClassGroupcollections .
+ands:researchRegistry          vitro:inClassGroup guhub:vitroClassGroupcollections .
+ands:researchCollection        vitro:inClassGroup guhub:vitroClassGroupcollections .
+ands:researchCatalog           vitro:inClassGroup guhub:vitroClassGroupcollections .
+ands:researchRepository        vitro:inClassGroup guhub:vitroClassGroupcollections .
+
+
+#Publications
+
+core:ResearchProposal vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Thesis           vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Database         vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Catalog          vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:AcademicArticle  vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:NewsRelease      vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Video            vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Issue            vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Newsletter       vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:EditedBook       vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:ConferencePaper  vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Software         vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Website          vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:ConferencePoster vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Proceedings      vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Grant            vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Book             vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Article          vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Series           vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Film             vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Webpage          vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Review           vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:AudioDocument    vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:WorkingPaper     vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:Speech           vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Patent           vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Journal          vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:EditorialArticle vitro:inClassGroup guhub:vitroClassGrouppublications .
+bibo:Report           vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:BlogPosting      vitro:inClassGroup guhub:vitroClassGrouppublications .
+core:CaseStudy        vitro:inClassGroup guhub:vitroClassGrouppublications .
+guhubext:RADPublication vitro:inClassGroup guhub:vitroClassGrouppublications .
+guhubext:ResearchHubPublication vitro:inClassGroup guhub:vitroClassGrouppublications .
+
+# END CLASSGROUP CONFIG
+
+# START PROPERTYGROUP CONFIG
+
+ands:isManagedBy                     vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isManagerOf                     vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isOwnedBy                       vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isOwnerOf                       vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isParticipantIn                 vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isSupportedBy                   vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:hasPointOfContact               vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isPointOfContactFor             vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:custodianOfResearchData         vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:isOutputOf                      vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:hasOutput                       vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:hasResearchData                 vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:hasParticipant                  vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:custodianDepartment             vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:associatedSupervisor            vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+ands:associatedPrincipleInvestigator vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation .
+
+# END PROPERTYGROUP CONFIG
+
+# START OBJECT PROPERTY ANNOTATIONS
+
+guhubext:hasGovernmentRepresentation
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddGovernmentRepresentationRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "90"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:governmentRepresentationOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasProfessionalMembership
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddMembershipOfProfessionalOrganisationRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "80"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:professionalMembershipOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasExternalAdvisory
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddExternalAdvisoryRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "70"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:externalAdvisoryOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasEditorialRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddEditorialRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "60"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:editorialRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasVisitingAppointment
+    vitro:customEntryFormAnnot"edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddVisitingAppointmentRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "50"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:visitingAppointmentOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasRHDSupervisorRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddRHDSupervisorRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupteaching ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "10"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:rHDSupervisorRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasHonoursSupervisorRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddHonoursSupervisorRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupteaching ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "20"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:honoursSupervisorRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasInternalServiceRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddInternalServiceRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupservice ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "30"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:internalServiceRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasExternalServiceRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddExternalServiceRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupservice ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "40"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:externalServiceRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasProfessionalExperienceRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddProfessionalExperienceRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "20"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:professionalExperienceRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+guhubext:hasAcademicExperienceRole
+    vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddAcademicExperienceRoleToPersonGenerator"^^xsd:string ;
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupbiography ;
+    vitro:offerCreateNewOptionAnnot "true"^^xsd:boolean ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+    vitro:displayRankAnnot "10"^^xsd:int ;
+    vitro:stubObjectPropertyAnnot "true"^^xsd:boolean .
+
+guhubext:academicExperienceRoleOf
+    vitro:displayLimitAnnot "5"^^xsd:int ;
+    vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+    vitro:inPropertyGroupAnnot vivoweb:vitroPropertyGroupaffiliation ;
+    vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:public ;
+    vitro:selectFromExistingAnnot "true"^^xsd:boolean .
+
+#END OBJECT PROPERTY ANNOTATIONS
+
+guhubext:CreativeWork
+	vitro:displayRankAnnot "260"^^xsd:int .
+
+# DataProperty annatotians
+
+guhubext:preferredName
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:nobody .
+
+foaf:familyName
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot roles:public ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot roles:nobody .
+
+
+# Publication Ordering
+bibo:AcademicArticle  	vitro:displayRankAnnot "1"^^xsd:int .
+bibo:Book             	vitro:displayRankAnnot "2"^^xsd:int .
+bibo:Chapter          	vitro:displayRankAnnot "3"^^xsd:int .
+core:ConferencePaper  	vitro:displayRankAnnot "4"^^xsd:int .
+guhubext:CreativeWork   vitro:displayRankAnnot "5"^^xsd:int .
+bibo:EditedBook       	vitro:displayRankAnnot "6"^^xsd:int .
+
+#Display Templates
+guhubext:ResearchHubPublication vitro:customDisplayViewAnnot "individual--gu-radpublicationNew.ftl"^^xsd:string .
+guhubext:RADPublication vitro:customDisplayViewAnnot "individual--gu-radpublicationNew.ftl"^^xsd:string .
+guhubext:ResearchHubProject vitro:customDisplayViewAnnot "individual--foaf-projectNew.ftl"^^xsd:string .
+guhubext:GrantProject vitro:customDisplayViewAnnot "individual--foaf-projectNew.ftl"^^xsd:string .
+guhubext:ResearchHubPerson vitro:customDisplayViewAnnot "individual--gu-radpersonNew.ftl"^^xsd:string .
+guhubext:ResearchHubGroup vitro:customDisplayViewAnnot "individual--gu-radgroupNew.ftl"^^xsd:string .
+ands:ResearchData vitro:customDisplayViewAnnot "individual--ands-researchdataNew.ftl"^^xsd:string .
+core:Service vitro:customDisplayViewAnnot "individual--core-serviceNew.ftl"^^xsd:string .
+guhubext:ResearchHubService vitro:customDisplayViewAnnot "individual--core-serviceNew.ftl"^^xsd:string .
+core:FundingOrganization vitro:customDisplayViewAnnot "individual--gu-fundingOrgNew.ftl"^^xsd:string .
+core:SubjectArea vitro:customDisplayViewAnnot "individual--core-subjectarea.ftl"^^xsd:string .
+core:ResearchArea vitro:customDisplayViewAnnot "individual--core-subjectarea.ftl"^^xsd:string .
+guhubext:ResearchHubInactive vitro:customDisplayViewAnnot "individual--inactive.ftl"^^xsd:string .
+
+#Editing Templates
+guhubext:hasMediaKeyword vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManageMediaKeywordsForIndividualGenerator"^^xsd:string .
+guhubext:hasProfessionalExperienceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddProfessionalExperienceRoleToPersonGenerator"^^xsd:string .
+guhubext:hasHonoursSupervisorRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddHonoursSupervisorRoleToPersonGenerator"^^xsd:string .
+guhubext:hasAcademicExperienceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddAcademicExperienceRoleToPersonGenerator"^^xsd:string .
+guhubext:hasRHDSupervisorRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddRHDSupervisorRoleToPersonGenerator"^^xsd:string .
+guhubext:hasExternalServiceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddExternalServiceRoleToPersonGenerator"^^xsd:string .
+guhubext:hasProfessionalMembership vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddMembershipOfProfessionalOrganisationRoleToPersonGenerator"^^xsd:string .
+guhubext:hasExternalAdvisory vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddExternalAdvisoryRoleToPersonGenerator"^^xsd:string .
+guhubext:hasEditorialRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddEditorialRoleToPersonGenerator"^^xsd:string .
+guhubext:hasVisitingAppointment vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddVisitingAppointmentRoleToPersonGenerator"^^xsd:string .
+guhubext:hasGovernmentRepresentation vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddGovernmentRepresentationRoleToPersonGenerator"^^xsd:string .
+guhubext:hasInternalServiceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddInternalServiceRoleToPersonGenerator"^^xsd:string .
+
+
+core:hasResearchArea vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManageResearchKeywordsForIndividualGenerator"^^xsd:string .
+core:hasSubjectArea vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddAssociatedConceptGenerator"^^xsd:string .
+core:awardOrHonor vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.PersonHasAwardOrHonorGenerator"^^xsd:string .
+core:webpage vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManageWebpagesForIndividualGenerator"^^xsd:string .
+core:educationalTraining vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.PersonHasEducationalTrainingNew"^^xsd:string .

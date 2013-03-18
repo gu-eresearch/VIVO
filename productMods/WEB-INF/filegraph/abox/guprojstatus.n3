@@ -1,0 +1,40 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix guhubext:   <http://griffith.edu.au/ontology/hubextensions/> .
+@prefix guprojstatus:   <http://griffith.edu.au/ontology/hubextensions/projstatus/> .
+
+
+guprojstatus:Completed a guhubext:ProjectStatus ;
+    rdfs:label "Completed"@en .
+
+guprojstatus:Culled a guhubext:ProjectStatus ;
+    rdfs:label "Culled"@en .
+
+guprojstatus:Discontinued a guhubext:ProjectStatus ;
+    rdfs:label "Discountinued"@en .
+
+guprojstatus:Draft a guhubext:ProjectStatus ;
+    rdfs:label "Draft"@en .
+
+guprojstatus:Initial a guhubext:ProjectStatus ;
+    rdfs:label "Initial"@en .
+
+guprojstatus:Proceeding a guhubext:ProjectStatus ;
+    rdfs:label "Proceeding"@en .
+
+guprojstatus:ReserveList a guhubext:ProjectStatus ;
+    rdfs:label "Reserve List"@en .
+
+guprojstatus:TransferredOut a guhubext:ProjectStatus ;
+    rdfs:label "Transferred Out"@en .
+
+guprojstatus:Unsuccessful a guhubext:ProjectStatus ;
+    rdfs:label "Unsuccessful"@en .
+
+guprojstatus:Withdrawn a guhubext:ProjectStatus ;
+    rdfs:label "Withdrawn"@en .
+
+guprojstatus:EnteredInError a guhubext:ProjectStatus ;
+    rdfs:label "Entered in Error"@en .
+
+guprojstatus:NotIdentified a guhubext:ProjectStatus ;
+    rdfs:label "Not Identified"@en .

@@ -1,0 +1,17 @@
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+     ?presentation rdfs:label ?presentationTitle . 
+     ?presenterRole rdfs:label ?roleLabel .
+} WHERE {
+     PERSON_URI vivo:hasPresenterRole ?presenterRole .
+          
+     optional {?presenterRole rdfs:label ?roleLabel}
+          
+     {?presenterRole vivo:roleRealizedIn ?presentation}
+        union
+     {?presenterRole vivo:roleIn ?presentation}   
+     
+     ?presentation rdfs:label ?presentationTitle .
+}

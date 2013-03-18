@@ -1,0 +1,711 @@
+@prefix afn:     <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix core:    <http://vivoweb.org/ontology/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix guhubext:   <http://griffith.edu.au/ontology/hubextensions/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+
+
+guhubext: a owl:Ontology ;
+    rdfs:label "Griffith Research Hub Ontology Extensions"@en;
+    rdfs:comment "This ontology mainly contains various Griffith specific vocabularies and helper classes"@en ;
+    .
+
+guhubext:GUOrganisation a owl:Class ;
+    rdfs:subClassOf foaf:Organization ;
+    rdfs:label "Griffith Organisation"@en ;
+    rdfs:comment "Organisations that exist within Griffith University"@en ;
+    .
+
+guhubext:GUPerson a owl:Class ;
+    rdfs:subClassOf foaf:Person ;
+    rdfs:label "Griffith Person"@en ;
+    rdfs:comment "Persons belonging to this class have a Griffith staff id."@en ;
+    .
+
+guhubext:GrantProject a owl:Class ;
+    rdfs:subClassOf core:Project ;
+    rdfs:label "Grant Project"@en ;
+    .
+
+guhubext:DonationProject a owl:Class ;
+    rdfs:subClassOf core:Project ;
+    rdfs:label "Donation Project"@en ;
+    .
+
+guhubext:CommercialProject a owl:Class ;
+    rdfs:subClassOf core:Project ;
+    rdfs:label "Consultancy & Commercial Research Policy Project"@en ;
+    .
+
+guhubext:NonResearchGrantProject a owl:Class ;
+    rdfs:subClassOf core:Project ;
+    rdfs:label "Non-Research Grant Project"@en ;
+    .
+
+guhubext:ExpressionOfInterest a owl:Class ;
+    rdfs:subClassOf core:Project ;
+    rdfs:label "Expression of Interest Project"@en ;
+    .
+
+guhubext:NotIdentifiedProject a owl:Class ;
+    rdfs:subClassOf core:Project ;
+    rdfs:label "Not identified Project"@en ;
+    .
+
+guhubext:NonGUAuthor a owl:Class ;
+    rdfs:subClassOf foaf:Person ;
+    rdfs:label "Non - Griffith Research Author"@en ;
+    rdfs:comment "Persons identified as non GU authors within RAD."@en ;
+    .
+
+guhubext:RADPublication a owl:Class ;
+    rdfs:label "RAD Publication" ;
+    rdfs:comment "Something that is treated as publication within RAD" ;
+    .
+
+guhubext:projectstate a owl:ObjectProperty ;
+    rdfs:label "Project status"@en ;
+    rdfs:comment "Describes the status of the project."@en ;
+    rdfs:domain core:Project ;
+    rdfs:range guhubext:ProjectStatus ;
+    .
+
+guhubext:ProjectStatus a owl:Class ;
+    rdfs:subClassOf core:AbstractInformation ;
+    rdfs:label "Project status"@en ;
+    rdfs:comment "Instances of this class can be used to describe the current status of a project"@en ;
+    .
+
+# Publication vocabulary
+
+guhubext:RefereedDesign a owl:Class ;
+    rdfs:label "Refereed Design" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:TechnicalDrawing a owl:Class ;
+    rdfs:label "Technical Drawing" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:CreativeWork a owl:Class ;
+    rdfs:label "Creative Work" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:Design a owl:Class ;
+    rdfs:label "Design" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:CuratorialWork a owl:Class;
+    rdfs:label "Curatorial Work" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:WrittenWork a owl:Class ;
+    rdfs:label "Written Work" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:Directorial a owl:Class ;
+    rdfs:label "Directorial" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:MusicalWork a owl:Class ;
+    rdfs:label "Musical Work" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:Commissions a owl:Class ;
+    rdfs:label "Commissions" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:CreativeWriting a owl:Class ;
+    rdfs:label "Creative Writing" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:Curatorship a owl:Class ;
+    rdfs:label "Curatorship" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:Composition a owl:Class ;
+    rdfs:label "Composition" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:Multimedia a owl:Class ;
+    rdfs:label "Multimedia" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:EditorialBoardMembership a owl:Class ;
+    rdfs:label "Editorial Board Membership" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:OverseasResearchVisitor a owl:Class ;
+    rdfs:label "Overseas Research Visitor" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:GuestEditorship a owl:Class ;
+    rdfs:label "Guest Editorship" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+guhubext:InternationalResearchCollaboration a owl:Class ;
+    rdfs:label "International Research Collaboration" ;
+    rdfs:subClassOf core:InformationResource ;
+    .
+
+#Roles
+
+guhubext:GovernmentRepresentationRole a owl:Class ;
+    rdfs:label "Government Representation" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:ExternalAdvisoryRole a owl:Class ;
+    rdfs:label "External Advisory Role" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:MembershipOfProfessionalOrganisationRole a owl:Class ;
+    rdfs:label "Membership Of Professional Organisation" ;
+    rdfs:subClassOf core:MemberRole ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:EditorialRole a owl:Class ;
+    rdfs:label "Editorial Role" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:VisitingAppointmentRole a owl:Class ;
+    rdfs:label "Visiting Appointment Role" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:SupervisorRole a owl:Class ;
+    rdfs:label "Supervisor Role" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:RHDSupervisorRole a owl:Class ;
+    rdfs:label "RHD Supervisor Role" ;
+    rdfs:subClassOf core:Supervisor ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:PrimaryRHDSupervisorRole a owl:Class ;
+    rdfs:label "Primary RHD Supervisor Role" ;
+    rdfs:subClassOf core:Supervisor ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:HonoursSupervisorRole a owl:Class ;
+    rdfs:label "Honours Supervisor Role" ;
+    rdfs:subClassOf core:Supervisor ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:InternalServiceRole a owl:Class ;
+    rdfs:label "Internal Service Role" ;
+    rdfs:subClassOf core:ServiceProviderRole ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:ExternalServiceRole a owl:Class ;
+    rdfs:label "External Service Role" ;
+    rdfs:subClassOf core:ServiceProviderRole ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:ProfessionalExperienceRole a owl:Class ;
+    rdfs:label "Professional Experience Role" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:AcademicExperienceRole a owl:Class ;
+    rdfs:label "Academic Experience Role" ;
+    rdfs:subClassOf core:Role ;
+    .
+
+guhubext:PrimaryAffiliationRole a owl:Class ;
+    rdfs:label "Primary Affiliation" ;
+    rdfs:subClassOf core:Role ;
+    .
+    
+guhubext:StudentMemberRole a owl:Class ;
+    rdfs:label "Student Member" ;
+    rdfs:subClassOf core:Role ;    
+    .
+    
+guhubext:ExternalMemberRole a owl:Class ;
+    rdfs:label "External Member" ;
+    rdfs:subClassOf core:Role ;    
+    .
+
+#ObjectProperties
+guhubext:hasGovernmentRepresentation
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Government Representation Roles"@en-US ;
+    rdfs:range guhubext:GovernmentRepresentationRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:governmentRepresentationOf ;
+    .
+
+guhubext:governmentRepresentationOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:GovernmentRepresentationRole ;
+    rdfs:label "government Representation By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasGovernmentRepresentation ;
+    .
+
+guhubext:hasProfessionalMembership
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Professional Memberships"@en-US ;
+    rdfs:range guhubext:MembershipOfProfessionalOrganisationRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:professionalMembershipOf ;
+    .
+
+guhubext:professionalMembershipOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:MembershipOfProfessionalOrganisationRole ;
+    rdfs:label "professional membership By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasProfessionalMembership ;
+    .
+
+guhubext:hasExternalAdvisory
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "External Advisory Roles"@en-US ;
+    rdfs:range guhubext:ExternalAdvisoryRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:externalAdvisoryOf ;
+    .
+
+
+guhubext:externalAdvisoryOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:ExternalAdvisoryRole ;
+    rdfs:label "External Advisory Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasExternalAdvisory ;
+    .
+
+guhubext:hasEditorialRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Editorial Roles"@en-US ;
+    rdfs:range guhubext:EditorialRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:editorialRoleOf ;
+    .
+
+guhubext:editorialRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:EditorialRole ;
+    rdfs:label "Editorial Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasEditorialRole ;
+    .
+
+guhubext:hasVisitingAppointment
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Visiting Appointments"@en-US ;
+    rdfs:range guhubext:VisitingAppointmentRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:visitingAppointmentOf ;
+    .
+
+guhubext:visitingAppointmentOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:VisitingAppointmentRole ;
+    rdfs:label "Visiting Appointment Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasVisitingAppointment ;
+    .
+
+guhubext:hasRHDSupervisorRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Past Supervision for Higher Degree Research"@en-US ;
+    rdfs:range guhubext:RHDSupervisorRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:rHDSupervisorRoleOf ;
+    .
+
+guhubext:hasPrimaryRHDSupervisorRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Past Primary Supervision for Higher Degree Research"@en-US ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:primaryRHDSupervisorRoleOf ;
+    .
+
+guhubext:rHDSupervisorRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:RHDSupervisorRole ;
+    rdfs:label "RHD Supervisor Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasRHDSupervisorRole ;
+    .
+    
+guhubext:primaryRHDSupervisorRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:PrimaryRHDSupervisorRole ;
+    rdfs:label "Primary RHD Supervisor Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasPrimaryRHDSupervisorRole ;
+    .    
+
+guhubext:hasHonoursSupervisorRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Past Honours Supervision"@en-US ;
+    rdfs:range guhubext:HonoursSupervisorRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:honoursSupervisorRoleOf ;
+    .
+
+guhubext:honoursSupervisorRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:HonoursSupervisorRole ;
+    rdfs:label "Honours Supervisor Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasHonoursSupervisorRole ;
+    .
+
+
+guhubext:hasInternalServiceRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Internal Service Role"@en-US ;
+    rdfs:range guhubext:InternalServiceRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:internalServiceRoleOf ;
+    .
+
+guhubext:internalServiceRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:InternalServiceRole ;
+    rdfs:label "Internal Service Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasInternalServiceRole ;
+    .
+
+guhubext:hasExternalServiceRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "External Service Role"@en-US ;
+    rdfs:range guhubext:ExternalServiceRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:externalServiceRoleOf ;
+    .
+
+guhubext:externalServiceRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:ExternalServiceRole ;
+    rdfs:label "External Servicex Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasExternalServiceRole ;
+    .
+
+guhubext:hasProfessionalExperienceRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Professional Experience"@en-US ;
+    rdfs:range guhubext:ProfessionalExperienceRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:professionalExperienceRoleOf ;
+    .
+
+guhubext:professionalExperienceRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:ProfessionalExperienceRole ;
+    rdfs:label "Professional Experience Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasProfessionalExperienceRole ;
+    .
+
+guhubext:hasAcademicExperienceRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Academic Experience"@en-US ;
+    rdfs:range guhubext:AcademicExperienceRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:academicExperienceRoleOf ;
+    .
+
+guhubext:academicExperienceRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:AcademicExperienceRole ;
+    rdfs:label "Academic Experience Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasAcademicExperienceRole ;
+    .
+
+guhubext:hasPrimaryAffiliationRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Primary Affiliation"@en-US ;
+    rdfs:range guhubext:PrimaryAffiliationRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:primaryAffiliationRoleOf ;
+    .
+
+guhubext:primaryAffiliationRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:PrimaryAffiliationRole ;
+    rdfs:label "Primary Affiliation Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasPrimaryAffiliationRole ;
+    .
+    
+guhubext:hasStudentMemberRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Student Member Roles"@en-US ;
+    rdfs:range guhubext:StudentMemberRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:studentMemberRoleOf ;
+    .
+
+guhubext:studentMemberRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:StudentMemberRole ;
+    rdfs:label "Student Member Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasStudentMemberRole ;
+    .
+    
+guhubext:hasExternalMemberRole
+    a       owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "External Member Roles"@en-US ;
+    rdfs:range guhubext:ExternalMemberRole ;
+    rdfs:subPropertyOf core:hasRole ;
+    owl:inverseOf guhubext:externalMemberRoleOf ;
+    .
+
+guhubext:externalMemberRoleOf
+    a       owl:ObjectProperty ;
+    rdfs:domain guhubext:ExternalMemberRole ;
+    rdfs:label "External Member Role By"@en-US ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf core:roleOf ;
+    owl:inverseOf guhubext:hasExternalMemberRole ;
+    .    
+
+guhubext:relatedProject
+    a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Related Project" ;
+    rdfs:range foaf:Project ;
+    rdfs:subPropertyOf dcterms:relation ;
+    owl:inverseOf guhubext:relatedAgent ;
+    .
+
+guhubext:relatedAgent
+    a owl:ObjectProperty ;
+    rdfs:domain owl:Thing ;
+    rdfs:label "Related Agent" ;
+    rdfs:range foaf:Agent ;
+    rdfs:subPropertyOf dcterms:relation ;
+    owl:inverseOf guhubext:relatedProject ;
+    .
+
+
+guhubext:relatedPublication
+    a owl:ObjectProperty ;
+    rdfs:domain foaf:Agent ;
+    rdfs:label "Related Publication" ;
+    rdfs:range guhubext:ResearchHubPublication ;
+    rdfs:subPropertyOf dcterms:relation ;
+    owl:inverseOf guhubext:relatedAgent ;
+    .
+
+
+
+guhubext:hasMediaKeyword
+      a       owl:ObjectProperty ;
+      rdfs:domain foaf:Person ;
+      rdfs:label "Media KeywordS"@en-US ;
+      rdfs:range skos:Concept ;
+      rdfs:subPropertyOf owl:topObjectProperty , core:hasSubjectArea , guhubext:hasMediaKeyword ;
+      vitro:displayLimitAnnot "5"^^xsd:int ;
+      vitro:displayRankAnnot "100"^^xsd:int ;
+      vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
+      vitro:inPropertyGroupAnnot <http://vivoweb.org/ontology#vitroPropertyGroupoverview> ;
+      vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
+      vitro:publicDescriptionAnnot "Media Keywords"^^xsd:string ;
+      vitro:selectFromExistingAnnot "true"^^xsd:boolean ;
+      owl:inverseOf guhubext:mediaKeywordFor ;
+      .
+
+guhubext:mediaKeywordFor
+      a       owl:ObjectProperty ;
+      rdfs:domain skos:Concept ;
+      rdfs:label "Media Keywords For"@en-US ;
+      rdfs:range foaf:Person ;
+      rdfs:subPropertyOf core:subjectAreaFor , owl:topObjectProperty , guhubext:mediaKeywordFor ;
+      vitro:displayLimitAnnot "5"^^xsd:int ;
+      vitro:displayRankAnnot "100"^^xsd:int ;
+      vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;
+      vitro:inPropertyGroupAnnot <http://vivoweb.org/ontology#vitroPropertyGroupoverview> ;
+      vitro:prohibitedFromUpdateBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#editor> ;       
+      vitro:publicDescriptionAnnot "Media Keywords"^^xsd:string ;        
+      owl:inverseOf guhubext:hasMediaKeyword ;
+      .
+
+
+guhubext:hasSupervisor
+      a       owl:ObjectProperty ;
+      rdfs:domain bibo:Thesis ;
+      rdfs:label "Supervisor"@en-US ;
+      rdfs:range core:Role ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      vitro:publicDescriptionAnnot "Supervisor"^^xsd:string ;        
+      .
+
+# Datatype Properties
+
+guhubext:rad_project_id
+    a owl:DatatypeProperty ;
+    rdfs:label "RAD Project number" ;
+    rdfs:domain foaf:Project ;
+    rdfs:subPropertyOf core:identifier
+    .
+
+guhubext:rad_project_ref
+    a owl:DatatypeProperty ;
+    rdfs:label "RAD Project reference" ;
+    rdfs:domain foaf:Project ;
+    rdfs:subPropertyOf core:identifier
+    .
+
+guhubext:arc_project_id
+    a owl:DatatypeProperty ;
+    rdfs:label "ARC Project identifier" ;
+    rdfs:domain foaf:Project ;
+    rdfs:subPropertyOf core:identifier
+    .
+
+guhubext:nhmrc_project_id
+    a owl:DatatypeProperty ;
+    rdfs:label "NHMRC Project identifier" ;
+    rdfs:domain foaf:Project ;
+    rdfs:subPropertyOf core:identifier
+    .
+
+guhubext:availableForSupervision
+    a owl:DatatypeProperty ;
+    rdfs:label "available for supervision" ;
+    rdfs:domain foaf:Person ;
+    rdfs:range xsd:boolean ;
+    .
+
+guhubext:book_journal_name
+    a owl:DatatypeProperty ;
+    rdfs:label "Journal" ;
+    rdfs:range xsd:string ;
+    .
+
+guhubext:education_level
+    a owl:DatatypeProperty ;
+    rdf:label "Education Level" ;
+    rdfs:range xsd:string ;
+    rdfs:domain core:AcademicDegree ;
+    .
+
+guhubext:preferredName
+    a owl:DatatypeProperty ;
+    rdf:label "Preferred Name" ;
+    rdfs:range xsd:string ;
+    rdfs:domain foaf:Agent ;
+    .
+
+guhubext:pageviews
+    a owl:DatatypeProperty ;
+    rdf:label "Pageviews" ;
+    rdfs:range xsd:integer ;
+    rdfs:domain owl:Thing ;
+    .
+
+# Marker classes for Profile System
+guhubext:ResearchHubProject
+    a owl:Class ;
+    rdfs:label "Project"@en ;
+    rdfs:comment "Searchable projects, with a landing page" .
+
+guhubext:ResearchHubGroup a owl:Class ;
+    rdfs:label "Group"@en ;
+    rdfs:comment "Searchable groups, with a landing page" .
+
+guhubext:ResearchHubPerson a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "Searchable persons, with a landing page" ;
+    vitro:customDisplayViewAnnot "individual--gu-radpersonNew.ftl"^^xsd:string .
+
+
+guhubext:researchhubpage a owl:DatatypeProperty ;
+    rdfs:comment "This property may have the values 'on', 'off', 'auto'" ;
+    rdfs:label "ResearchHub Landing Page" ;
+    rdfs:range xsd:string .
+
+guhubext:ResearchHubService
+    a owl:Class ;
+    rdfs:label "Service"@en ;
+    rdfs:comment "Searchable services, with a landing page" .
+    
+guhubext:ResearchHubPublication
+    a owl:Class ;
+    rdfs:label "Publication"@en ;
+    rdfs:comment "Searchable publications, with a landing page" .
+
+guhubext:ResearchHubInactive
+    a owl:Class ;
+    rdfs:label "Inactive Landing Page"@en ;
+    rdfs:comment "Objects in the research hub which have a inactive landing page" .
+
+
+#Misc
+
+guhubext:contentPage a owl:Class ;
+    rdfs:label "Content Page" ;
+    
+    
+    .

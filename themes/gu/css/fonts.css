@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: "Rockwell", Times New Roman, Times, Serif; 
+	src: url("../fonts/rockwell.eot?") format("embedded-opentype"), 
+		 url("../fonts/rockwell.woff") format("woff"), 
+		 url("../fonts/rockwell.ttf") format("truetype"), 
+		 url("../fonts/rockwell.svg#web") format("svg"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Rockwell";
+	font-weight:normal;
+}

@@ -1,0 +1,474 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix ands: <http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+
+<http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl> a owl:Ontology;
+    rdfs:label "ANDSHarvest"@en;
+    cc:license <http://creativecommons.org/licenses/by-nc/3.0/au/>;
+    dc:contributor "Griffith University",
+        "Queensland University of Technology",
+        "University of Melbourne";
+    dc:date "2010-08-06";
+    dc:rights "This document is published under the Creative Commons Attribution License 3.0 Australia." .
+
+ands:SubjectAreaKeyword a owl:Class;
+    rdfs:label "Subject area Keyword"@en;
+    rdfs:comment "A class to define subject areas as simple keywords. The keyword itself is kept as rdfs:label on instances of this class"^^xsd:string;
+    rdfs:subClassOf vivo:SubjectArea .
+
+ands:abn a owl:DatatypeProperty;
+    rdfs:label "Australian Business Number"@en;
+    rdfs:comment "Australian Business Number"^^xsd:string;
+    rdfs:subPropertyOf vivo:identifier .
+
+ands:arc a owl:DatatypeProperty;
+    rdfs:label "Archival Research Catalog identifier"@en;
+    dc:date "ARC Id"^^xsd:string;
+    rdfs:comment "Archival Research Catalog identifier"^^xsd:string;
+    rdfs:subPropertyOf bibo:identifier .
+
+ands:ark a owl:DatatypeProperty;
+    rdfs:label "ARK identifier"@en;
+    rdfs:comment "ARK persistent identifier"^^xsd:string;
+    rdfs:subPropertyOf vivo:identifier .
+
+ands:ands a owl:DatatypeProperty;
+    rdfs:label "ANDS identifier"@en;
+    rdfs:comment "ANDS handle"^^xsd:string;
+    rdfs:domain owl:Thing;
+    rdfs:subPropertyOf bibo:handle .
+
+ands:associatedPrincipleInvestigator a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "Associated Principal Investigator"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range foaf:Person .
+
+ands:centralDigitalDataReference a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Central LTDS Digital Data reference"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:anyURI .
+
+ands:classifiesResearchData a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "Classifes Research Data"@en;
+    rdfs:range ands:ResearchData .
+
+ands:dateOfPublication a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Date of Publication (Public Release)"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:dateTime .
+
+ands:dateResearchCommenced a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Date Research Commenced"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:dateTime .
+
+ands:dateResearchCompleted a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Date Research Completed"@en;
+    rdfs:domain ands:ResearchData .
+
+ands:digitalDataReference a owl:DatatypeProperty;
+    rdfs:label "Digital Data reference"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:string .
+
+ands:groupDescription a owl:DatatypeProperty;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:string .
+
+ands:hasXSLTransform a owl:DatatypeProperty;
+    rdfs:label "XSL Transform Location"@en;
+    rdfs:domain ands:OAIVITROHarvest;
+    rdfs:range xsd:string .
+
+ands:infouri a owl:DatatypeProperty;
+    rdfs:label "info-uri identifier"@en;
+    rdfs:comment "Identifier in INFO URI scheme"^^xsd:string;
+    rdfs:subPropertyOf vivo:identifier .
+
+ands:isil a owl:DatatypeProperty;
+    rdfs:label "ISIL Identifier"@en;
+    rdfs:comment "International Standard Identifier for Libraries and Related Organizations"^^xsd:string;
+    rdfs:subPropertyOf bibo:identifier .
+
+ands:locationOfDataManagementPlan a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Location of DMP"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:anyURI .
+
+ands:nla a owl:DatatypeProperty;
+    rdfs:label "National Library Australia identifier"@en;
+    rdfs:comment "National Library Australia identifier"^^xsd:string;
+    rdfs:subPropertyOf vivo:identifier .
+
+ands:nonDigitalDataLocation a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Location of Non Digital Data"@en;
+    rdfs:domain ands:ResearchData .
+
+ands:originatingSource a owl:DatatypeProperty;
+    rdfs:label "originating source"@en;
+    rdfs:comment "Used in RIF-CS export. Normally supplied by ANDSHavest instance, but can be overriden by each harvested individual"^^xsd:string;
+    rdfs:domain owl:Thing;
+    rdfs:range xsd:string .
+
+ands:purl a owl:DatatypeProperty;
+    rdfs:label "Persistent URL"@en;
+    rdfs:comment "A Persistent URL"^^xsd:string;
+    rdfs:subPropertyOf bibo:uri .
+
+ands:researchCatalog a owl:Class;
+    rdfs:label "Research Catalog"@en;
+    rdfs:comment "collection of resource descriptions describing the content of one or more repositories or collective works"^^xsd:string;
+    rdfs:subClassOf ands:ResearchData .
+
+ands:researchCollection a owl:Class;
+    rdfs:label "Research Collection"@en;
+    rdfs:comment "compiled content created as separate and independent works and assembled into a collective whole for distribution and use"^^xsd:string;
+    rdfs:subClassOf ands:ResearchData .
+
+ands:researchDataDescription a owl:DatatypeProperty;
+    rdfs:label "Description"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range rdf:XMLLiteral .
+
+ands:researchDataSet a owl:Class;
+    rdfs:label "Reserach Dataset"@en;
+    rdfs:comment "collection of physical or digital objects generated by research activities"^^xsd:string;
+    rdfs:subClassOf ands:ResearchData .
+
+ands:researchRecordsCollection a owl:Class;
+    rdfs:label "Research Records Collection"@en;
+    rdfs:subClassOf ands:ResearchData .
+
+ands:researchRegistry a owl:Class;
+    rdfs:label "Research Registry"@en;
+    rdfs:comment "collection of registry objects compiled to support the business of a given community"^^xsd:string;
+    rdfs:subClassOf ands:ResearchData .
+
+ands:retentionPeriod a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Retention Period"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:string .
+
+ands:rights a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "Rights and Restrictions"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range xsd:string .
+
+ands:selectionSPARQLLocation a owl:DatatypeProperty;
+    rdfs:label "Selection SPARQL Location"@en;
+    rdfs:domain ands:OAIVITROHarvest;
+    rdfs:range xsd:string .
+
+ands:associatedSupervisor a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "Associated Supervisor"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range foaf:Person;
+    owl:inverseOf ands:researchDataFromSupervisions .
+
+ands:custodianDepartment a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "Custodian Department"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range foaf:Organization;
+    owl:inverseOf ands:custodianOfResearchData .
+
+ands:custodianOfResearchData a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "Research Data Custodian"@en;
+    rdfs:range ands:ResearchData;
+    owl:inverseOf ands:custodianDepartment .
+
+ands:describes a owl:ObjectProperty;
+    rdfs:label "describes"@en;
+    rdfs:comment "This collection is a catalogue for, or index of, of items in the related collection"^^xsd:string;
+    rdfs:domain ands:ResearchData;
+    rdfs:range ands:ResearchData;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isDescribedBy .
+
+ands:harvestedBy a owl:ObjectProperty;
+    rdfs:label "harvested by"@en;
+    rdfs:domain owl:Thing;
+    rdfs:range ands:OAIVITROHarvest;
+    owl:inverseOf ands:harvests .
+
+ands:harvests a owl:ObjectProperty;
+    rdfs:label "harvests"@en;
+    rdfs:domain ands:OAIVITROHarvest;
+    rdfs:range owl:Thing;
+    owl:inverseOf ands:harvestedBy .
+
+ands:hasCollector a owl:ObjectProperty;
+    rdfs:label "hasCollector"@en;
+    rdfs:comment "has been aggregated by the related party"^^xsd:string;
+    rdfs:domain ands:ResearchData;
+    rdfs:range foaf:Agent;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isCollectorOf .
+
+ands:hasOutput a owl:ObjectProperty;
+    rdfs:label "Has Research Data Sets"@en;
+    rdfs:range ands:ResearchData;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isOutputOf .
+
+ands:hasParticipant a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "has Porticipant"@en;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isParticipantIn .
+
+ands:hasPointOfContact a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "point of contact"@en;
+    rdfs:comment "An agent who is point of contact for something"^^xsd:string;
+    rdfs:range foaf:Agent;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isPointOfContactFor .
+
+ands:hasResearchData a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "has research data"@en;
+    rdfs:domain foaf:Person;
+    rdfs:range ands:ResearchData;
+    owl:inverseOf ands:publishedIn .
+
+ands:isCollectorOf a owl:ObjectProperty;
+    rdfs:label "is collector of"@en;
+    rdfs:domain foaf:Agent;
+    rdfs:range ands:ResearchData;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:hasCollector .
+
+ands:isDescribedBy a owl:ObjectProperty;
+    rdfs:label "isDescribedBy"@en;
+    rdfs:comment "This collection is catalogued or indexed by the related collection"^^xsd:string;
+    rdfs:domain ands:ResearchData;
+    rdfs:range ands:ResearchData;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:describes .
+
+ands:isLocatedIn a owl:ObjectProperty;
+    rdfs:label "isLocatedIn"@en;
+    rdfs:comment "is held in the related repository"^^xsd:string;
+    rdfs:domain ands:ResearchData;
+    rdfs:range ands:researchRepository;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isLocationFor .
+
+ands:isLocationFor a owl:ObjectProperty;
+    rdfs:label "isLocationFor"@en;
+    rdfs:comment "is the repository where the related collection is held"^^xsd:string;
+    rdfs:domain ands:researchRepository;
+    rdfs:range ands:ResearchData;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isLocatedIn .
+
+ands:isManagedBy a owl:ObjectProperty;
+    rdfs:label "is managed by"@en;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isManagerOf .
+
+ands:isManagerOf a owl:ObjectProperty;
+    rdfs:label "is manager of"@en;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isManagedBy .
+
+ands:isOutputOf a owl:ObjectProperty;
+    rdfs:label "Research Data Owning Project"@en;
+    rdfs:domain ands:ResearchData;
+    rdfs:range [ a owl:Class;
+            owl:unionOf ( vivo:Grant vivo:Program ) ];
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:hasOutput .
+
+ands:isOwnedBy a owl:ObjectProperty;
+    rdfs:label "isOwnedBy"@en;
+    rdfs:comment "legally belongs to the related party"^^xsd:string;
+    rdfs:domain ands:ResearchData;
+    rdfs:range foaf:Agent;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isOwnerOf .
+
+ands:isOwnerOf a owl:ObjectProperty;
+    rdfs:label "is owner of"@en;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isOwnedBy .
+
+ands:isParticipantIn a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "is participant in"@en;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:hasParticipant .
+
+ands:isPointOfContactFor a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "point of contact for"@en;
+    rdfs:comment "This agent is point of contact for something."^^xsd:string;
+    rdfs:domain foaf:Agent;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:hasPointOfContact .
+
+ands:isSupportedBy a owl:ObjectProperty;
+    rdfs:label "isSupportedBy"@en;
+    rdfs:comment "enables contribution and access to and use of the related collection"^^xsd:string;
+    rdfs:domain vivo:Service;
+    rdfs:range ands:ResearchData;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:supports .
+
+ands:publishedIn a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "results published in"@en;
+    rdfs:domain ands:ResearchData;
+    owl:inverseOf ands:hasResearchData .
+
+ands:researchDataFromSupervisions a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "Research Data From Supervisions"@en;
+    rdfs:range ands:ResearchData;
+    owl:inverseOf ands:associatedSupervisor .
+
+ands:streetAddress a owl:ObjectProperty;
+    rdfs:label "street address"@en;
+    rdfs:comment "street address"^^xsd:string;
+    rdfs:range vivo:Address;
+    owl:inverseOf ands:streetAddressFor .
+
+ands:streetAddressFor a owl:ObjectProperty;
+    rdfs:label "street address for"@en;
+    rdfs:domain vivo:Address;
+    owl:inverseOf ands:streetAddress .
+
+ands:addressLabel a rdf:Property,
+        owl:DatatypeProperty;
+    rdfs:label "address label"@en;
+    rdfs:comment "can hold a preformatted adress label for e.g. display purposes"^^xsd:string;
+    rdfs:range xsd:string;
+    rdfs:domain vivo:Address .
+
+ands:supports a owl:ObjectProperty;
+    rdfs:label "supports"@en;
+    rdfs:comment "can be contributed to, accessed or used through the related service"^^xsd:string;
+    rdfs:domain ands:ResearchData;
+    rdfs:range vivo:Service;
+    rdfs:subPropertyOf dcterms:relation;
+    owl:inverseOf ands:isSupportedBy .
+
+ands:wsdl a rdf:Property,
+        owl:ObjectProperty;
+    rdfs:label "WSDL"@en;
+    rdfs:comment "A URL to retrieve a WSDL file."^^xsd:string;
+    rdfs:subPropertyOf foaf:page .
+
+ands:researchRepository a owl:Class;
+    rdfs:label "Research Repository"@en;
+    rdfs:comment "collection of physical or digital objects compiled for information and documentation purposes and/or for storage and safekeeping"^^xsd:string;
+    rdfs:subClassOf ands:ResearchData .
+
+ands:OAIVITROHarvest a owl:Class;
+    rdfs:label "OAIHarvest"@en .
+
+ands:ResearchData a owl:Class;
+    rdfs:label "Research Data"@en;
+    rdfs:subClassOf bibo:Collection .
+
+dcterms:hasPart owl:inverseOf dcterms:isPartOf .
+
+dcterms:isPartOf owl:inverseOf dcterms:hasPart .
+
+bibo:Collection rdfs:subClassOf [ a owl:Restriction;
+            owl:allValuesFrom [ a owl:Class;
+                    owl:unionOf ( bibo:Collection bibo:Document ) ];
+            owl:onProperty dcterms:isPartOf ] .
+
+ands:HarvestOAIPMH a rdfs:Class;
+    rdfs:label "harvest-oaipmh"^^xsd:string;
+    rdfs:comment "Open Archives Initiative Protocol for Metadata Harvesting.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:SearchHTTP a rdfs:Class ;
+    rdfs:label "search-http"^^xsd:string;
+    rdfs:comment "Search service over HTTP. RFC2616";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:SearchOpenSearch a rdfs:Class ;
+    rdfs:label "search-opensearch"^^xsd:string;
+    rdfs:comment "a collection of technologies that allow publishing of search results in a format suitable for syndication and aggregation.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:SearchSRU a rdfs:Class ;
+    rdfs:label "search-sru"^^xsd:string;
+    rdfs:comment "SRU is a standard XML-focused search protocol for Internet search queries based on Z39.50 semantics.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:SearchSRW a rdfs:Class ;
+    rdfs:label "search-srw"^^xsd:string;
+    rdfs:comment "SRU VIA HTTP SOAP ('SRU via HTTP SOAP ' is the former SRW). SRW/U is being deployed as the search API for the DSpace initiative. It is being considered as the standard search API by a number of communities, including the meta-searching and geospatial searching communities.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:Searchz3950 a rdfs:Class ;
+    rdfs:label "search-z3950"^^xsd:string;
+    rdfs:comment "the International Standard, ISO 23950: Information Retrieval (Z39.50): Application Service Definition and Protocol Specification, (also ANSI/NISO Z39.50). The standard specifies a client/server-based protocol for searching and retrieving information from remote databases.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:SyndicateATOM a rdfs:Class ;
+    rdfs:label "syndicate-atom"^^xsd:string;
+    rdfs:comment "an XML-based Web content and metadata syndication format. http://tools.ietf.org/html/rfc4287";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:SyndicateRSS a rdfs:Class ;
+    rdfs:label "syndicate-rss"^^xsd:string;
+    rdfs:comment "a family of web feed formats that are specified using XML.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:ServiceCreate a rdfs:Class ;
+    rdfs:label "create"^^xsd:string;
+    rdfs:comment "produces a new data object representing existing phenomena in the world, including physical reality and user input. An instrument creates data.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:ServiceGenerate a rdfs:Class ;
+    rdfs:label "generate"^^xsd:string;
+    rdfs:comment "produces a new data object out of mathematical formulae and parameters, rather than capturing and representing existing data in the world. A simulator generates data. (The simulation is the generated data.) A random number generator generates data.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:ServiceReport a rdfs:Class ;
+    rdfs:label "report"^^xsd:string;
+    rdfs:comment "presents existing data in a summary form. A visualisation reports on data.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:ServiceAnnotate a rdfs:Class ;
+    rdfs:label "annotate"^^xsd:string;
+    rdfs:comment "links an annotation to a data object, or part thereof.";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:ServiceTransform a rdfs:Class ;
+    rdfs:label "transform"^^xsd:string;
+    rdfs:comment "changes a data object into a new data object, with a distinct format. An analysis tool creates a new data object out of data (either raw data, or other analyses).";
+    rdfs:subClassOf dcmitype:Service .
+
+ands:ServiceAssemble a rdfs:Class ;
+    rdfs:label "assemble"^^xsd:string;
+    rdfs:comment "builds a new data object instance composed of existing data objects. A survey generation tool creates a survey form out of user input and templates.";
+    rdfs:subClassOf dcmitype:Service .

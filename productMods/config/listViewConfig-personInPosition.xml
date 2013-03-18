@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-select>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX fn:  &lt;http://www.w3.org/2005/xpath-functions#&gt;
+        PREFIX rdf:    &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+        
+        
+        SELECT DISTINCT ?position 
+                        ?positionTitle
+                        ?hrJobTitle
+                        ?org ?orgName 
+                        ?hasProfile
+                        ?dateTimeStart ?dateTimeEnd WHERE {
+            ?subject ?property ?position  
+            OPTIONAL { ?position core:positionInOrganization ?org . 
+                       ?org rdfs:label ?orgName 
+            }
+			OPTIONAL {
+				?org ?isprofiletype &lt;http://griffith.edu.au/ontology/hubextensions/GrantProject&gt; .
+		    }
+		    LET(?hasProfile := IF( bound(?isprofiletype), 1, 0) ) .            
+            OPTIONAL { ?position rdfs:label ?positionTitle  }
+            OPTIONAL { ?position core:hrJobTitle ?hrJobTitle }
+            OPTIONAL { ?position core:dateTimeInterval ?dateTimeInterval 
+                       OPTIONAL { ?dateTimeInterval core:start ?dateTimeStartValue .                    
+                                  ?dateTimeStartValue core:dateTime ?dateTimeStart 
+                       }
+                       OPTIONAL { ?dateTimeInterval core:end ?dateTimeEndValue .  
+                                  ?dateTimeEndValue core:dateTime ?dateTimeEnd  
+                       }
+            }
+            FILTER 	(	fn:starts-with(?positionTitle, "ARC Fellow") ||
+            			fn:starts-with(?positionTitle, "Convenor RHD") ||
+            			fn:starts-with(?positionTitle, "Dean") ||
+            			fn:starts-with(?positionTitle, "Dep Director") ||
+            			fn:starts-with(?positionTitle, "Dep Head") ||
+            			fn:starts-with(?positionTitle, "Dept Head") ||
+            			fn:starts-with(?positionTitle, "Deputy CEO") ||
+            			fn:starts-with(?positionTitle, "Dean") ||
+            			fn:starts-with(?positionTitle, "Deputy Director") ||
+            			fn:starts-with(?positionTitle, "Deputy Head") ||
+            			fn:starts-with(?positionTitle, "Dir") ||
+            			fn:starts-with(?positionTitle, "Head") ||
+            			fn:starts-with(?positionTitle, "Portfolio Dean") ||
+            			fn:starts-with(?positionTitle, "Pro Vice") ||
+            			fn:starts-with(?positionTitle, "PVC") ||
+            			fn:starts-with(?positionTitle, "Prog") ||
+            			fn:starts-with(?positionTitle, "Research Coordinator") ||
+            			fn:starts-with(?positionTitle, "Senior Deputy Head") 
+            		)
+        } ORDER BY DESC(?dateTimeEnd) DESC(?dateTimeStart) ?orgName
+    </query-select>
+ 
+    <query-collated>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX fn:  &lt;http://www.w3.org/2005/xpath-functions#&gt;
+        PREFIX rdf:    &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+        
+        SELECT DISTINCT ?subclass 
+                        ?position
+                        ?positionTitle    
+                        ?hrJobTitle                    
+                        ?org ?orgName 
+                        ?hasProfile
+                        ?dateTimeStart ?dateTimeEnd WHERE {
+            ?subject ?property ?position 
+            OPTIONAL { ?position core:positionInOrganization ?org .
+                       ?org rdfs:label ?orgName 
+            }
+            OPTIONAL {
+				?org ?isprofiletype &lt;http://griffith.edu.au/ontology/hubextensions/GrantProject&gt; .
+		    }
+		    LET(?hasProfile := IF( bound(?isprofiletype), 1, 0) ) .
+            OPTIONAL { ?position rdfs:label ?positionTitle } 
+            OPTIONAL { ?position core:hrJobTitle ?hrJobTitle }
+            OPTIONAL { ?position core:dateTimeInterval ?dateTimeInterval 
+                       OPTIONAL { ?dateTimeInterval core:start ?dateTimeStartValue .                     
+                                  ?dateTimeStartValue core:dateTime ?dateTimeStart 
+                       }
+                       OPTIONAL { ?dateTimeInterval core:end ?dateTimeEndValue .   
+                                  ?dateTimeEndValue core:dateTime ?dateTimeEnd  
+                       }
+            }
+            OPTIONAL { ?position a ?subclass .
+                       ?subclass rdfs:subClassOf core:Position 
+            } 
+            FILTER 	(	fn:starts-with(?positionTitle, "ARC Fellow") ||
+            			fn:starts-with(?positionTitle, "Convenor RHD") ||
+            			fn:starts-with(?positionTitle, "Dean") ||
+            			fn:starts-with(?positionTitle, "Dep Director") ||
+            			fn:starts-with(?positionTitle, "Dep Head") ||
+            			fn:starts-with(?positionTitle, "Dept Head") ||
+            			fn:starts-with(?positionTitle, "Deputy CEO") ||
+            			fn:starts-with(?positionTitle, "Dean") ||
+            			fn:starts-with(?positionTitle, "Deputy Director") ||
+            			fn:starts-with(?positionTitle, "Deputy Head") ||
+            			fn:starts-with(?positionTitle, "Dir") ||
+            			fn:starts-with(?positionTitle, "Head") ||
+            			fn:starts-with(?positionTitle, "Portfolio Dean") ||
+            			fn:starts-with(?positionTitle, "Pro Vice") ||
+            			fn:starts-with(?positionTitle, "PVC") ||
+            			fn:starts-with(?positionTitle, "Prog") ||
+            			fn:starts-with(?positionTitle, "Research Coordinator") ||
+            			fn:starts-with(?positionTitle, "Senior Deputy Head") 
+            		)
+        } ORDER BY ?subclass DESC(?dateTimeEnd) DESC(?dateTimeStart) ?orgName
+    </query-collated>
+       
+    <query-construct>
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;  
+        CONSTRUCT {
+            ?subclass rdfs:subClassOf core:Position 
+        } WHERE {
+            ?subclass rdfs:subClassOf core:Position 
+        }
+    </query-construct>
+    
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;    
+        PREFIX rdf:    &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+        CONSTRUCT { 
+            ?subject ?property ?position .
+            ?position ?positionProperty ?positionValue .
+            ?org rdfs:label ?orgName  .
+            ?org rdf:type ?orgType .
+        } WHERE {
+            {
+               ?subject ?property ?position .
+            } UNION {
+               ?subject ?property ?position .
+               ?position ?positionProperty ?positionValue 
+            } UNION {
+               ?subject ?property ?position .
+               ?position core:positionInOrganization ?org . 
+               ?org rdfs:label ?orgName .
+            } UNION {
+               ?subject ?property ?position .
+               ?position core:positionInOrganization ?org . 
+               ?org rdf:type ?orgType .
+            }
+        } 
+    </query-construct>
+    
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;   
+        CONSTRUCT { 
+            ?subject ?property ?position .  
+            ?position core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:start ?dateTimeStartValue .
+            ?dateTimeStartValue core:dateTime ?dateTimeStart 
+        } WHERE {
+            ?subject ?property ?position .  
+            ?position core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:start ?dateTimeStartValue .
+            ?dateTimeStartValue core:dateTime ?dateTimeStart 
+        } 
+    </query-construct>
+
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;    
+        CONSTRUCT { 
+            ?subject ?property ?position .  
+            ?position core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:end ?dateTimeEndValue .
+            ?dateTimeEndValue core:dateTime ?dateTimeEnd 
+        } WHERE {
+            ?subject ?property ?position .  
+            ?position core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:end ?dateTimeEndValue .
+            ?dateTimeEndValue core:dateTime ?dateTimeEnd 
+        } 
+    </query-construct>
+              
+    <template>propStatement-personInPosition.ftl</template>
+</list-view-config>

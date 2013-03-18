@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- Default list view config file for uncollated object properties 
+    
+     See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-base>    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX rdf:    &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          
+        SELECT 	?object 
+        		?name 
+        		?isProfiledGroup WHERE {
+            ?subject ?property ?object 
+            OPTIONAL { ?object rdfs:label ?name }
+            OPTIONAL { ?object vitro:moniker ?moniker }
+            OPTIONAL {
+				?object ?isprofiletype &lt;http://griffith.edu.au/ontology/hubextensions/GrantProject&gt; .
+		    }
+		    LET(?isProfiledGroup := IF( bound(?isprofiletype), 1, 0) ) .
+        } ORDER BY ?name ?object  
+    </query-base>
+
+    <query-collated>    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX rdf:    &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          
+        SELECT 	?subclass 
+        		?object 
+        		?name 
+        		?isProfiledGroup {
+            ?subject ?property ?object
+            OPTIONAL { ?object a ?subclass } 
+            OPTIONAL { ?object rdfs:label ?name }
+            OPTIONAL { ?object vitro:moniker ?moniker }
+            OPTIONAL {
+				?object ?isprofiletype &lt;http://griffith.edu.au/ontology/hubextensions/GrantProject&gt; .
+		    }
+		    LET(?isProfiledGroup := IF( bound(?isprofiletype), 1, 0) ) .
+            FILTER ( afn:namespace(?subclass) != "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" )                     
+        } ORDER BY ?subclass ?name ?object  
+    </query-collated>
+
+    <query-construct>
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX rdf:    &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+
+        CONSTRUCT {
+            ?subject ?property ?object .
+            ?object a ?subclass .
+            ?object rdfs:label ?name .
+            ?object vitro:moniker ?moniker .
+            ?object rdf:type ?objectType .
+        } WHERE {
+            { 
+                ?subject ?property ?object 
+            }
+            UNION {
+                ?subject ?property ?object .
+                ?object a ?subclass . 
+            } 
+            UNION {
+                ?subject ?property ?object .
+                ?object rdfs:label ?name .
+            } 
+            UNION {
+                ?subject ?property ?object .
+                ?object vitro:moniker ?moniker .
+            }
+            UNION {
+                ?subject ?property ?object .
+                ?object rdf:type ?objectType .
+            }
+        }
+    </query-construct>
+     
+    <postprocessor>edu.cornell.mannlib.vitro.webapp.web.templatemodels.individual.DefaultListViewDataPostProcessor</postprocessor>
+    
+    <template>propStatement-hasOrganisationAffilliation.ftl</template>
+</list-view-config>

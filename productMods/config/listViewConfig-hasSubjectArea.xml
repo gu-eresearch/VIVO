@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- Default list view config file for uncollated object properties 
+    
+     See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-select>    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdf:   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+          
+        SELECT DISTINCT ?object ?prop str(?name) str(?broaderLabel) ( IF( BOUND(?broaderLabel), ?broaderLabel, ?name )  AS ?for4) ( IF( ?broaderLabel, ?name, "" )  AS ?for6)
+        WHERE {
+            ?subject ?property ?object 
+            OPTIONAL { ?object rdfs:label ?name }
+            OPTIONAL { ?object vitro:moniker ?moniker }
+            OPTIONAL { ?object skos:broader ?broader . ?broader rdfs:label ?broaderLabel . }
+            OPTIONAL { ?object rdf:type ?prop . }
+        } ORDER BY ?for4 ?for6 ?broaderLabel ?name ?object  
+    </query-select>
+
+    <query-collated>    
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+          
+        SELECT ?subclass ?object ?name ?moniker ?broaderLabel{
+            ?subject ?property ?object
+            OPTIONAL { ?object a ?subclass } 
+            OPTIONAL { ?object rdfs:label ?name }
+            OPTIONAL { ?object vitro:moniker ?moniker }           
+            OPTIONAL { ?object skos:broader ?broader . ?broader rdfs:label ?broaderLabel . }
+            FILTER ( afn:namespace(?subclass) != "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#" )                     
+        } ORDER BY ?subclass ?name ?object  
+    </query-collated>
+
+    <query-construct>
+        PREFIX vitro: &lt;http://vitro.mannlib.cornell.edu/ns/vitro/0.7#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+        PREFIX rdf:   &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+
+        CONSTRUCT {
+            ?subject ?property ?object .
+            ?object a ?subclass .
+            ?object rdfs:label ?name .
+            ?object vitro:moniker ?moniker .
+            ?object skos:broader ?broader .
+            ?broader rdfs:label ?broaderLabel .
+            ?object rdf:type ?prop .
+        } WHERE {
+            { 
+                ?subject ?property ?object .
+                ?object a &lt;http://purl.org/asc/1297.0/2008/for/FOR&gt;  .
+            }
+            UNION {
+                ?subject ?property ?object .
+                ?object a &lt;http://purl.org/asc/1297.0/2008/for/FOR&gt;  .
+                ?object a ?subclass . 
+            } 
+            UNION {
+                ?subject ?property ?object .
+                ?object a &lt;http://purl.org/asc/1297.0/2008/for/FOR&gt;  .
+                ?object rdfs:label ?name .
+            } 
+            UNION {
+                ?subject ?property ?object .
+                ?object a &lt;http://purl.org/asc/1297.0/2008/for/FOR&gt;  .
+                ?object vitro:moniker ?moniker .
+            }
+            UNION {
+                ?subject ?property ?object .
+                ?object rdf:type &lt;http://purl.org/asc/1297.0/2008/for/FOR6&gt;  . 
+				?object skos:broader ?broader .
+				?broader rdfs:label ?broaderLabel .
+            } UNION {
+                # ?subject ?property ?object .
+				#?object rdf:type &lt;http://purl.org/asc/1297.0/1998/rfcd/RFCD6&gt;  . 
+				#?object rdfs:label ?name .
+				#?object skos:exactMatch ?for_object .
+				#?for_object skos:broader ?broader .
+				#?broader rdfs:label ?broaderLabel .
+				#LET (?prop := "http://purl.org/asc/1297.0/1998/rfcd/RFCD") . 
+            } UNION {
+                # ?subject ?property ?object .
+				#?object rdf:type &lt;http://purl.org/asc/1297.0/1998/seo/SEO6&gt;  . 
+				#?object rdfs:label ?name .
+				#?object skos:exactMatch ?for_object .
+				#?for_object skos:broader ?broader .
+				#?broader rdfs:label ?broaderLabel .
+				#LET (?prop := "http://purl.org/asc/1297.0/1998/seo/SEO") . 
+            }
+            
+        }
+    </query-construct>
+     
+    <postprocessor>edu.cornell.mannlib.vitro.webapp.web.templatemodels.individual.DefaultListViewDataPostProcessor</postprocessor>
+    
+    <template>propStatement-hasSubjectArea.ftl</template>
+</list-view-config>

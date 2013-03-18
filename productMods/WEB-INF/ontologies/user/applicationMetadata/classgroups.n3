@@ -1,0 +1,44 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix guhub:   <http://research-hub-dev.griffith.edu.au/individual/> .
+
+# Stament within this files go into the applicationMetaData model.
+# <http://vitro.mannlib.cornell.edu/default/vitro-kb-applicationMetadata>
+
+guhub:vitroClassGrouppublications
+      a       owl:Thing , vitro:ClassGroup ;
+      rdfs:label "publications"@en-US ;
+      vitro:displayRank "8"^^xsd:int ;
+      vitro:modTime "2009-12-27T08:36:28"^^xsd:dateTime .
+
+guhub:vitroClassGroupprojects
+      a       owl:Thing , vitro:ClassGroup ;
+      rdfs:label "projects"@en-US ;
+      vitro:displayRank "2"^^xsd:int ;
+      vitro:modTime "2009-12-08T10:42:02"^^xsd:dateTime .
+
+guhub:vitroClassGroupgroups
+      a       owl:Thing , vitro:ClassGroup ;
+      rdfs:label "groups"@en-US ;
+      vitro:displayRank "5"^^xsd:int ;
+      vitro:modTime "2009-12-08T10:36:48"^^xsd:dateTime .
+
+guhub:vitroClassGroupservices
+      a       owl:Thing , vitro:ClassGroup ;
+      rdfs:label "services"@en-US ;
+      vitro:displayRank "11"^^xsd:int ;
+      vitro:modTime "2010-01-10T14:30:34"^^xsd:dateTime .
+
+guhub:vitroClassGroupcollections
+      a       owl:Thing , vitro:ClassGroup ;
+      rdfs:label "collections"@en-US ;
+      vitro:displayRank "11"^^xsd:int ;
+      vitro:modTime "2010-01-10T14:30:34"^^xsd:dateTime .
+
+guhub:vitroClassGroupresearchers
+      a       owl:Thing , vitro:ClassGroup ;
+      rdfs:label "researchers"@en-US ;
+      vitro:displayRank "1"^^xsd:int ;
+      vitro:modTime "2009-12-08T10:32:16"^^xsd:dateTime .

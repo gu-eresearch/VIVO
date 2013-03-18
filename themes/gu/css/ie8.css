@@ -1,0 +1,61 @@
+/*
+Copyright (c) 2011, Cornell University
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution.
+    * Neither the name of Cornell University nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+.intro-left-search-btn {
+	background: url("../images/gu_vitro_sprites.png") 0 0 no-repeat;
+	background-position: -312px -0px;
+	border: 0px;
+	width: 52px;
+	height: 28px;
+	padding: 1px 3px 3px 0;
+	font-size: .78em;
+	float: left;
+	cursor: pointer;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.intro-left-search-btn:hover{
+	background-color:transparent;
+	text-transform:underline!important;
+}
+
+.intro-left-search-input, #intro-left-rsearch-input, #intro-left-tsearch-input  {
+	background: url("../images/gu_vitro_sprites.png") 0 0 no-repeat !important;
+	background-position: -0px -285px !important;
+	border: 0px !important;
+	width: 166px;
+	height: 22px;	
+	line-height: 28px;
+	padding: 0 0 5px 2px !important;
+	margin:0px;
+	float: left;
+	border-radius:0px;
+	behavior: url(/PIE.htc); /* IE8 */
+	background-color:transparent!important;
+	box-shadow:none!important;
+}

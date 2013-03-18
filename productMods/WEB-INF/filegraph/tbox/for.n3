@@ -1,0 +1,3026 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix for: <http://purl.org/asc/1297.0/for/> .
+@prefix for08: <http://purl.org/asc/1297.0/2008/for/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rfcd: <http://purl.org/asc/1297.0/1998/rfcd/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010110> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230111> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230112> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010112> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010204>,
+        <http://purl.org/asc/1297.0/2008/for/010207>,
+        <http://purl.org/asc/1297.0/2008/for/010299>,
+        <http://purl.org/asc/1297.0/2008/for/010302>,
+        <http://purl.org/asc/1297.0/2008/for/010399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010402>,
+        <http://purl.org/asc/1297.0/2008/for/010403>,
+        <http://purl.org/asc/1297.0/2008/for/010499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020101>,
+        <http://purl.org/asc/1297.0/2008/for/020102>,
+        <http://purl.org/asc/1297.0/2008/for/020103>,
+        <http://purl.org/asc/1297.0/2008/for/020104>,
+        <http://purl.org/asc/1297.0/2008/for/020105>,
+        <http://purl.org/asc/1297.0/2008/for/020108>,
+        <http://purl.org/asc/1297.0/2008/for/020109>,
+        <http://purl.org/asc/1297.0/2008/for/020110> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020406> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020401>,
+        <http://purl.org/asc/1297.0/2008/for/020402>,
+        <http://purl.org/asc/1297.0/2008/for/020403>,
+        <http://purl.org/asc/1297.0/2008/for/020405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020202>,
+        <http://purl.org/asc/1297.0/2008/for/020203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/249999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/029902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030605>,
+        <http://purl.org/asc/1297.0/2008/for/030607>,
+        <http://purl.org/asc/1297.0/2008/for/030699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030203>,
+        <http://purl.org/asc/1297.0/2008/for/030299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030401>,
+        <http://purl.org/asc/1297.0/2008/for/030402>,
+        <http://purl.org/asc/1297.0/2008/for/030403>,
+        <http://purl.org/asc/1297.0/2008/for/030404>,
+        <http://purl.org/asc/1297.0/2008/for/030405>,
+        <http://purl.org/asc/1297.0/2008/for/030406>,
+        <http://purl.org/asc/1297.0/2008/for/030499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030501>,
+        <http://purl.org/asc/1297.0/2008/for/030502>,
+        <http://purl.org/asc/1297.0/2008/for/030504>,
+        <http://purl.org/asc/1297.0/2008/for/030599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030704> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/259999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/039902>,
+        <http://purl.org/asc/1297.0/2008/for/039999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040301>,
+        <http://purl.org/asc/1297.0/2008/for/040302>,
+        <http://purl.org/asc/1297.0/2008/for/040305>,
+        <http://purl.org/asc/1297.0/2008/for/040399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040402>,
+        <http://purl.org/asc/1297.0/2008/for/040403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040104>,
+        <http://purl.org/asc/1297.0/2008/for/040105>,
+        <http://purl.org/asc/1297.0/2008/for/040605> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040101>,
+        <http://purl.org/asc/1297.0/2008/for/040102>,
+        <http://purl.org/asc/1297.0/2008/for/040103>,
+        <http://purl.org/asc/1297.0/2008/for/040106>,
+        <http://purl.org/asc/1297.0/2008/for/040108>,
+        <http://purl.org/asc/1297.0/2008/for/040199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/269901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040604>,
+        <http://purl.org/asc/1297.0/2008/for/040606>,
+        <http://purl.org/asc/1297.0/2008/for/040607> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/269999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/049999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060108>,
+        <http://purl.org/asc/1297.0/2008/for/060111> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060102>,
+        <http://purl.org/asc/1297.0/2008/for/060109>,
+        <http://purl.org/asc/1297.0/2008/for/060112>,
+        <http://purl.org/asc/1297.0/2008/for/060113>,
+        <http://purl.org/asc/1297.0/2008/for/060114>,
+        <http://purl.org/asc/1297.0/2008/for/060199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060404>,
+        <http://purl.org/asc/1297.0/2008/for/060408>,
+        <http://purl.org/asc/1297.0/2008/for/060499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060310> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060702>,
+        <http://purl.org/asc/1297.0/2008/for/060703>,
+        <http://purl.org/asc/1297.0/2008/for/060799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060801>,
+        <http://purl.org/asc/1297.0/2008/for/060802>,
+        <http://purl.org/asc/1297.0/2008/for/060803>,
+        <http://purl.org/asc/1297.0/2008/for/060804>,
+        <http://purl.org/asc/1297.0/2008/for/060806>,
+        <http://purl.org/asc/1297.0/2008/for/060809>,
+        <http://purl.org/asc/1297.0/2008/for/060899> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270706> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060207>,
+        <http://purl.org/asc/1297.0/2008/for/060308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270707> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270799> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050101>,
+        <http://purl.org/asc/1297.0/2008/for/050102>,
+        <http://purl.org/asc/1297.0/2008/for/050103>,
+        <http://purl.org/asc/1297.0/2008/for/050199>,
+        <http://purl.org/asc/1297.0/2008/for/060202>,
+        <http://purl.org/asc/1297.0/2008/for/060203>,
+        <http://purl.org/asc/1297.0/2008/for/060299>,
+        <http://purl.org/asc/1297.0/2008/for/060303>,
+        <http://purl.org/asc/1297.0/2008/for/060305>,
+        <http://purl.org/asc/1297.0/2008/for/060306>,
+        <http://purl.org/asc/1297.0/2008/for/060307>,
+        <http://purl.org/asc/1297.0/2008/for/060311> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270899> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100102>,
+        <http://purl.org/asc/1297.0/2008/for/100199>,
+        <http://purl.org/asc/1297.0/2008/for/100201>,
+        <http://purl.org/asc/1297.0/2008/for/100202>,
+        <http://purl.org/asc/1297.0/2008/for/100205>,
+        <http://purl.org/asc/1297.0/2008/for/100299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/279999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/069901>,
+        <http://purl.org/asc/1297.0/2008/for/069999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080704>,
+        <http://purl.org/asc/1297.0/2008/for/080708> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080601>,
+        <http://purl.org/asc/1297.0/2008/for/080607>,
+        <http://purl.org/asc/1297.0/2008/for/080613>,
+        <http://purl.org/asc/1297.0/2008/for/080614> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280213> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080102>,
+        <http://purl.org/asc/1297.0/2008/for/080199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080301>,
+        <http://purl.org/asc/1297.0/2008/for/080302>,
+        <http://purl.org/asc/1297.0/2008/for/080303>,
+        <http://purl.org/asc/1297.0/2008/for/080304>,
+        <http://purl.org/asc/1297.0/2008/for/080306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/289999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080501>,
+        <http://purl.org/asc/1297.0/2008/for/080502>,
+        <http://purl.org/asc/1297.0/2008/for/080503>,
+        <http://purl.org/asc/1297.0/2008/for/080504>,
+        <http://purl.org/asc/1297.0/2008/for/080505>,
+        <http://purl.org/asc/1297.0/2008/for/080599>,
+        <http://purl.org/asc/1297.0/2008/for/080701>,
+        <http://purl.org/asc/1297.0/2008/for/080702>,
+        <http://purl.org/asc/1297.0/2008/for/080703>,
+        <http://purl.org/asc/1297.0/2008/for/080705>,
+        <http://purl.org/asc/1297.0/2008/for/080707>,
+        <http://purl.org/asc/1297.0/2008/for/080709>,
+        <http://purl.org/asc/1297.0/2008/for/080799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100303>,
+        <http://purl.org/asc/1297.0/2008/for/100305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090801>,
+        <http://purl.org/asc/1297.0/2008/for/090803>,
+        <http://purl.org/asc/1297.0/2008/for/090804>,
+        <http://purl.org/asc/1297.0/2008/for/090806>,
+        <http://purl.org/asc/1297.0/2008/for/090899> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090101>,
+        <http://purl.org/asc/1297.0/2008/for/090107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090102>,
+        <http://purl.org/asc/1297.0/2008/for/090105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091007> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091003>,
+        <http://purl.org/asc/1297.0/2008/for/091004>,
+        <http://purl.org/asc/1297.0/2008/for/091005>,
+        <http://purl.org/asc/1297.0/2008/for/091009>,
+        <http://purl.org/asc/1297.0/2008/for/091011>,
+        <http://purl.org/asc/1297.0/2008/for/091099> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090202>,
+        <http://purl.org/asc/1297.0/2008/for/090204>,
+        <http://purl.org/asc/1297.0/2008/for/090205>,
+        <http://purl.org/asc/1297.0/2008/for/090299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090401>,
+        <http://purl.org/asc/1297.0/2008/for/090402>,
+        <http://purl.org/asc/1297.0/2008/for/090406>,
+        <http://purl.org/asc/1297.0/2008/for/090408>,
+        <http://purl.org/asc/1297.0/2008/for/090409>,
+        <http://purl.org/asc/1297.0/2008/for/090410>,
+        <http://purl.org/asc/1297.0/2008/for/090499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290802> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090508>,
+        <http://purl.org/asc/1297.0/2008/for/090509> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290805> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290899> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090503>,
+        <http://purl.org/asc/1297.0/2008/for/090504>,
+        <http://purl.org/asc/1297.0/2008/for/090505>,
+        <http://purl.org/asc/1297.0/2008/for/090599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090605>,
+        <http://purl.org/asc/1297.0/2008/for/090606>,
+        <http://purl.org/asc/1297.0/2008/for/090607>,
+        <http://purl.org/asc/1297.0/2008/for/090608> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290903> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291099> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091401>,
+        <http://purl.org/asc/1297.0/2008/for/091403>,
+        <http://purl.org/asc/1297.0/2008/for/091407> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091203>,
+        <http://purl.org/asc/1297.0/2008/for/091204>,
+        <http://purl.org/asc/1297.0/2008/for/091205>,
+        <http://purl.org/asc/1297.0/2008/for/091206>,
+        <http://purl.org/asc/1297.0/2008/for/091208>,
+        <http://purl.org/asc/1297.0/2008/for/091299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090303>,
+        <http://purl.org/asc/1297.0/2008/for/090304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100605>,
+        <http://purl.org/asc/1297.0/2008/for/100699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291702> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100506>,
+        <http://purl.org/asc/1297.0/2008/for/100507> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291703> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100504>,
+        <http://purl.org/asc/1297.0/2008/for/100509>,
+        <http://purl.org/asc/1297.0/2008/for/100510> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291804> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100701>,
+        <http://purl.org/asc/1297.0/2008/for/100702>,
+        <http://purl.org/asc/1297.0/2008/for/100703>,
+        <http://purl.org/asc/1297.0/2008/for/100704>,
+        <http://purl.org/asc/1297.0/2008/for/100705>,
+        <http://purl.org/asc/1297.0/2008/for/100706>,
+        <http://purl.org/asc/1297.0/2008/for/100707>,
+        <http://purl.org/asc/1297.0/2008/for/100708>,
+        <http://purl.org/asc/1297.0/2008/for/100709>,
+        <http://purl.org/asc/1297.0/2008/for/100710>,
+        <http://purl.org/asc/1297.0/2008/for/100711>,
+        <http://purl.org/asc/1297.0/2008/for/100712>,
+        <http://purl.org/asc/1297.0/2008/for/100713>,
+        <http://purl.org/asc/1297.0/2008/for/100799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291899> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091501>,
+        <http://purl.org/asc/1297.0/2008/for/091502>,
+        <http://purl.org/asc/1297.0/2008/for/091503>,
+        <http://purl.org/asc/1297.0/2008/for/091506>,
+        <http://purl.org/asc/1297.0/2008/for/091507>,
+        <http://purl.org/asc/1297.0/2008/for/091599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/299902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090201>,
+        <http://purl.org/asc/1297.0/2008/for/090405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/299904> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/099902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/299999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/099999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050301>,
+        <http://purl.org/asc/1297.0/2008/for/050399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070301>,
+        <http://purl.org/asc/1297.0/2008/for/070304>,
+        <http://purl.org/asc/1297.0/2008/for/070399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070207>,
+        <http://purl.org/asc/1297.0/2008/for/070299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070507> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070502>,
+        <http://purl.org/asc/1297.0/2008/for/070506>,
+        <http://purl.org/asc/1297.0/2008/for/070509>,
+        <http://purl.org/asc/1297.0/2008/for/070510>,
+        <http://purl.org/asc/1297.0/2008/for/070599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300799> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070406>,
+        <http://purl.org/asc/1297.0/2008/for/070499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300801> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050207> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300899> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050201>,
+        <http://purl.org/asc/1297.0/2008/for/050206>,
+        <http://purl.org/asc/1297.0/2008/for/050208>,
+        <http://purl.org/asc/1297.0/2008/for/050210>,
+        <http://purl.org/asc/1297.0/2008/for/050299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070102>,
+        <http://purl.org/asc/1297.0/2008/for/070103>,
+        <http://purl.org/asc/1297.0/2008/for/070104>,
+        <http://purl.org/asc/1297.0/2008/for/070105>,
+        <http://purl.org/asc/1297.0/2008/for/070107>,
+        <http://purl.org/asc/1297.0/2008/for/070199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/309999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/079999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120501>,
+        <http://purl.org/asc/1297.0/2008/for/120503>,
+        <http://purl.org/asc/1297.0/2008/for/120504>,
+        <http://purl.org/asc/1297.0/2008/for/120505>,
+        <http://purl.org/asc/1297.0/2008/for/120506>,
+        <http://purl.org/asc/1297.0/2008/for/120507>,
+        <http://purl.org/asc/1297.0/2008/for/120508> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110702>,
+        <http://purl.org/asc/1297.0/2008/for/110707>,
+        <http://purl.org/asc/1297.0/2008/for/110799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320307> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110101>,
+        <http://purl.org/asc/1297.0/2008/for/110103>,
+        <http://purl.org/asc/1297.0/2008/for/110107>,
+        <http://purl.org/asc/1297.0/2008/for/110199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111503>,
+        <http://purl.org/asc/1297.0/2008/for/111504> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111502> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111506> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111505>,
+        <http://purl.org/asc/1297.0/2008/for/111599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320899> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110503>,
+        <http://purl.org/asc/1297.0/2008/for/110506>,
+        <http://purl.org/asc/1297.0/2008/for/110507>,
+        <http://purl.org/asc/1297.0/2008/for/110508>,
+        <http://purl.org/asc/1297.0/2008/for/110509> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321011> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110311> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321015> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111201>,
+        <http://purl.org/asc/1297.0/2008/for/111202>,
+        <http://purl.org/asc/1297.0/2008/for/111204>,
+        <http://purl.org/asc/1297.0/2008/for/111205>,
+        <http://purl.org/asc/1297.0/2008/for/111206>,
+        <http://purl.org/asc/1297.0/2008/for/111207>,
+        <http://purl.org/asc/1297.0/2008/for/111209>,
+        <http://purl.org/asc/1297.0/2008/for/111299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321016> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111301>,
+        <http://purl.org/asc/1297.0/2008/for/111303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321020> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110316> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321023> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110313>,
+        <http://purl.org/asc/1297.0/2008/for/111208> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321099> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110299>,
+        <http://purl.org/asc/1297.0/2008/for/110305>,
+        <http://purl.org/asc/1297.0/2008/for/110399>,
+        <http://purl.org/asc/1297.0/2008/for/111499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111101>,
+        <http://purl.org/asc/1297.0/2008/for/111102>,
+        <http://purl.org/asc/1297.0/2008/for/111103>,
+        <http://purl.org/asc/1297.0/2008/for/111104>,
+        <http://purl.org/asc/1297.0/2008/for/111199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111701>,
+        <http://purl.org/asc/1297.0/2008/for/111713>,
+        <http://purl.org/asc/1297.0/2008/for/111715> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321213> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111702>,
+        <http://purl.org/asc/1297.0/2008/for/111799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110403>,
+        <http://purl.org/asc/1297.0/2008/for/110405>,
+        <http://purl.org/asc/1297.0/2008/for/110499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160506> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/130301>,
+        <http://purl.org/asc/1297.0/2008/for/130307>,
+        <http://purl.org/asc/1297.0/2008/for/130308>,
+        <http://purl.org/asc/1297.0/2008/for/130310>,
+        <http://purl.org/asc/1297.0/2008/for/130311>,
+        <http://purl.org/asc/1297.0/2008/for/130399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/130206>,
+        <http://purl.org/asc/1297.0/2008/for/130210>,
+        <http://purl.org/asc/1297.0/2008/for/130211>,
+        <http://purl.org/asc/1297.0/2008/for/130299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/339999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/139999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340209> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140214>,
+        <http://purl.org/asc/1297.0/2008/for/140215> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140204>,
+        <http://purl.org/asc/1297.0/2008/for/140206>,
+        <http://purl.org/asc/1297.0/2008/for/140299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/349901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/149903> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/349999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/149902>,
+        <http://purl.org/asc/1297.0/2008/for/149999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150101>,
+        <http://purl.org/asc/1297.0/2008/for/150106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150501>,
+        <http://purl.org/asc/1297.0/2008/for/150503>,
+        <http://purl.org/asc/1297.0/2008/for/150504>,
+        <http://purl.org/asc/1297.0/2008/for/150505>,
+        <http://purl.org/asc/1297.0/2008/for/150506>,
+        <http://purl.org/asc/1297.0/2008/for/150507>,
+        <http://purl.org/asc/1297.0/2008/for/150599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150303>,
+        <http://purl.org/asc/1297.0/2008/for/150304>,
+        <http://purl.org/asc/1297.0/2008/for/150310>,
+        <http://purl.org/asc/1297.0/2008/for/150311> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150205>,
+        <http://purl.org/asc/1297.0/2008/for/150299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150702>,
+        <http://purl.org/asc/1297.0/2008/for/150703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160602>,
+        <http://purl.org/asc/1297.0/2008/for/160605>,
+        <http://purl.org/asc/1297.0/2008/for/160606>,
+        <http://purl.org/asc/1297.0/2008/for/160608> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160501>,
+        <http://purl.org/asc/1297.0/2008/for/160503>,
+        <http://purl.org/asc/1297.0/2008/for/160504>,
+        <http://purl.org/asc/1297.0/2008/for/160505>,
+        <http://purl.org/asc/1297.0/2008/for/160507>,
+        <http://purl.org/asc/1297.0/2008/for/160508>,
+        <http://purl.org/asc/1297.0/2008/for/160514>,
+        <http://purl.org/asc/1297.0/2008/for/160599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160802>,
+        <http://purl.org/asc/1297.0/2008/for/160804>,
+        <http://purl.org/asc/1297.0/2008/for/160899> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160101>,
+        <http://purl.org/asc/1297.0/2008/for/160199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160304>,
+        <http://purl.org/asc/1297.0/2008/for/160399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220203>,
+        <http://purl.org/asc/1297.0/2008/for/220206> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/379999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/169903>,
+        <http://purl.org/asc/1297.0/2008/for/169904>,
+        <http://purl.org/asc/1297.0/2008/for/169905> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170104>,
+        <http://purl.org/asc/1297.0/2008/for/170105>,
+        <http://purl.org/asc/1297.0/2008/for/170108>,
+        <http://purl.org/asc/1297.0/2008/for/170199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180108> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390110> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390111> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180116> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180114> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/399999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/189999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200101>,
+        <http://purl.org/asc/1297.0/2008/for/200102>,
+        <http://purl.org/asc/1297.0/2008/for/200103>,
+        <http://purl.org/asc/1297.0/2008/for/200104>,
+        <http://purl.org/asc/1297.0/2008/for/200105>,
+        <http://purl.org/asc/1297.0/2008/for/200199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190302>,
+        <http://purl.org/asc/1297.0/2008/for/190399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210202>,
+        <http://purl.org/asc/1297.0/2008/for/210299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190406>,
+        <http://purl.org/asc/1297.0/2008/for/190407>,
+        <http://purl.org/asc/1297.0/2008/for/190408>,
+        <http://purl.org/asc/1297.0/2008/for/190409> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190401>,
+        <http://purl.org/asc/1297.0/2008/for/190405>,
+        <http://purl.org/asc/1297.0/2008/for/190410> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190504> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190202>,
+        <http://purl.org/asc/1297.0/2008/for/190203>,
+        <http://purl.org/asc/1297.0/2008/for/190205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120304>,
+        <http://purl.org/asc/1297.0/2008/for/120305>,
+        <http://purl.org/asc/1297.0/2008/for/120306>,
+        <http://purl.org/asc/1297.0/2008/for/120307>,
+        <http://purl.org/asc/1297.0/2008/for/120399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/419901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190101>,
+        <http://purl.org/asc/1297.0/2008/for/190102>,
+        <http://purl.org/asc/1297.0/2008/for/190103>,
+        <http://purl.org/asc/1297.0/2008/for/190104>,
+        <http://purl.org/asc/1297.0/2008/for/190199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200301>,
+        <http://purl.org/asc/1297.0/2008/for/200302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420111> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200310> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420120> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200317> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200320>,
+        <http://purl.org/asc/1297.0/2008/for/200321>,
+        <http://purl.org/asc/1297.0/2008/for/200323> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200501>,
+        <http://purl.org/asc/1297.0/2008/for/200502>,
+        <http://purl.org/asc/1297.0/2008/for/200504>,
+        <http://purl.org/asc/1297.0/2008/for/200505> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420210> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200515> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420215> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200519>,
+        <http://purl.org/asc/1297.0/2008/for/200521>,
+        <http://purl.org/asc/1297.0/2008/for/200522> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200507>,
+        <http://purl.org/asc/1297.0/2008/for/200508> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420306> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200206>,
+        <http://purl.org/asc/1297.0/2008/for/200211> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200202>,
+        <http://purl.org/asc/1297.0/2008/for/200207>,
+        <http://purl.org/asc/1297.0/2008/for/200208>,
+        <http://purl.org/asc/1297.0/2008/for/200210>,
+        <http://purl.org/asc/1297.0/2008/for/200299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210301>,
+        <http://purl.org/asc/1297.0/2008/for/210303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210309>,
+        <http://purl.org/asc/1297.0/2008/for/210311>,
+        <http://purl.org/asc/1297.0/2008/for/210313> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220102>,
+        <http://purl.org/asc/1297.0/2008/for/220103>,
+        <http://purl.org/asc/1297.0/2008/for/220107>,
+        <http://purl.org/asc/1297.0/2008/for/220199>,
+        <http://purl.org/asc/1297.0/2008/for/220303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220209>,
+        <http://purl.org/asc/1297.0/2008/for/220210> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220302>,
+        <http://purl.org/asc/1297.0/2008/for/220306>,
+        <http://purl.org/asc/1297.0/2008/for/220317>,
+        <http://purl.org/asc/1297.0/2008/for/220318>,
+        <http://purl.org/asc/1297.0/2008/for/220399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220402>,
+        <http://purl.org/asc/1297.0/2008/for/220499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/449999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/229999> .
+
+rfcd:RFCD rdfs:subClassOf for:FOR .
+
+<http://purl.org/asc/1297.0/2008/for/010101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230102>,
+        <http://purl.org/asc/1297.0/1998/rfcd/230103> .
+
+<http://purl.org/asc/1297.0/2008/for/010106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230108> .
+
+<http://purl.org/asc/1297.0/2008/for/010108> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230109> .
+
+<http://purl.org/asc/1297.0/2008/for/010109> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230113> .
+
+<http://purl.org/asc/1297.0/2008/for/010111> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230106>,
+        <http://purl.org/asc/1297.0/1998/rfcd/230114> .
+
+<http://purl.org/asc/1297.0/2008/for/010201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230115> .
+
+<http://purl.org/asc/1297.0/2008/for/010203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230110>,
+        <http://purl.org/asc/1297.0/1998/rfcd/230119> .
+
+<http://purl.org/asc/1297.0/2008/for/010205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/239902>,
+        <http://purl.org/asc/1297.0/1998/rfcd/239903> .
+
+<http://purl.org/asc/1297.0/2008/for/010301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230116> .
+
+<http://purl.org/asc/1297.0/2008/for/019999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/239904> .
+
+<http://purl.org/asc/1297.0/2008/for/020106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240102> .
+
+<http://purl.org/asc/1297.0/2008/for/020107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260603> .
+
+<http://purl.org/asc/1297.0/2008/for/020204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240303> .
+
+<http://purl.org/asc/1297.0/2008/for/030106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250408>,
+        <http://purl.org/asc/1297.0/1998/rfcd/250409> .
+
+<http://purl.org/asc/1297.0/2008/for/030301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250503> .
+
+<http://purl.org/asc/1297.0/2008/for/030302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/259904> .
+
+<http://purl.org/asc/1297.0/2008/for/030304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250502> .
+
+<http://purl.org/asc/1297.0/2008/for/030306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250501> .
+
+<http://purl.org/asc/1297.0/2008/for/030307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250605>,
+        <http://purl.org/asc/1297.0/1998/rfcd/250606> .
+
+<http://purl.org/asc/1297.0/2008/for/030601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250102>,
+        <http://purl.org/asc/1297.0/1998/rfcd/250106> .
+
+<http://purl.org/asc/1297.0/2008/for/030606> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250104>,
+        <http://purl.org/asc/1297.0/1998/rfcd/250105> .
+
+<http://purl.org/asc/1297.0/2008/for/040299> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260399> .
+
+<http://purl.org/asc/1297.0/2008/for/040308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260112>,
+        <http://purl.org/asc/1297.0/1998/rfcd/260113> .
+
+<http://purl.org/asc/1297.0/2008/for/040311> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260110>,
+        <http://purl.org/asc/1297.0/1998/rfcd/260111> .
+
+<http://purl.org/asc/1297.0/2008/for/040407> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260205>,
+        <http://purl.org/asc/1297.0/1998/rfcd/260206> .
+
+<http://purl.org/asc/1297.0/2008/for/040499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260204> .
+
+<http://purl.org/asc/1297.0/2008/for/040601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260114> .
+
+<http://purl.org/asc/1297.0/2008/for/040699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260599> .
+
+<http://purl.org/asc/1297.0/2008/for/050202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270708>,
+        <http://purl.org/asc/1297.0/1998/rfcd/300805> .
+
+<http://purl.org/asc/1297.0/2008/for/060110> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270104> .
+
+<http://purl.org/asc/1297.0/2008/for/060302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270709> .
+
+<http://purl.org/asc/1297.0/2008/for/060405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270201> .
+
+<http://purl.org/asc/1297.0/2008/for/060407> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270202> .
+
+<http://purl.org/asc/1297.0/2008/for/060411> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270203> .
+
+<http://purl.org/asc/1297.0/2008/for/060599> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270302>,
+        <http://purl.org/asc/1297.0/1998/rfcd/270399> .
+
+<http://purl.org/asc/1297.0/2008/for/070403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300705> .
+
+<http://purl.org/asc/1297.0/2008/for/070799> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300509> .
+
+<http://purl.org/asc/1297.0/2008/for/080101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280209> .
+
+<http://purl.org/asc/1297.0/2008/for/080107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280205>,
+        <http://purl.org/asc/1297.0/1998/rfcd/280206> .
+
+<http://purl.org/asc/1297.0/2008/for/080109> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280207> .
+
+<http://purl.org/asc/1297.0/2008/for/080299> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280403>,
+        <http://purl.org/asc/1297.0/1998/rfcd/280499> .
+
+<http://purl.org/asc/1297.0/2008/for/080399> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280301> .
+
+<http://purl.org/asc/1297.0/2008/for/080499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280502>,
+        <http://purl.org/asc/1297.0/1998/rfcd/280503>,
+        <http://purl.org/asc/1297.0/1998/rfcd/280505> .
+
+<http://purl.org/asc/1297.0/2008/for/080612> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280106> .
+
+<http://purl.org/asc/1297.0/2008/for/080699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280105> .
+
+<http://purl.org/asc/1297.0/2008/for/090104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290204>,
+        <http://purl.org/asc/1297.0/1998/rfcd/290205> .
+
+<http://purl.org/asc/1297.0/2008/for/090108> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290207> .
+
+<http://purl.org/asc/1297.0/2008/for/090199> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290206> .
+
+<http://purl.org/asc/1297.0/2008/for/090906> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291002> .
+
+<http://purl.org/asc/1297.0/2008/for/091006> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290305>,
+        <http://purl.org/asc/1297.0/1998/rfcd/290307> .
+
+<http://purl.org/asc/1297.0/2008/for/091202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291402> .
+
+<http://purl.org/asc/1297.0/2008/for/091207> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291302>,
+        <http://purl.org/asc/1297.0/1998/rfcd/291403> .
+
+<http://purl.org/asc/1297.0/2008/for/091209> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291401>,
+        <http://purl.org/asc/1297.0/1998/rfcd/291407> .
+
+<http://purl.org/asc/1297.0/2008/for/091210> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291405>,
+        <http://purl.org/asc/1297.0/1998/rfcd/291406> .
+
+<http://purl.org/asc/1297.0/2008/for/091302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290304> .
+
+<http://purl.org/asc/1297.0/2008/for/091402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290704> .
+
+<http://purl.org/asc/1297.0/2008/for/100401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270801> .
+
+<http://purl.org/asc/1297.0/2008/for/100501> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291701> .
+
+<http://purl.org/asc/1297.0/2008/for/100502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291706>,
+        <http://purl.org/asc/1297.0/1998/rfcd/291707> .
+
+<http://purl.org/asc/1297.0/2008/for/100505> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291705> .
+
+<http://purl.org/asc/1297.0/2008/for/110104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320303>,
+        <http://purl.org/asc/1297.0/1998/rfcd/320306> .
+
+<http://purl.org/asc/1297.0/2008/for/110319> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321021> .
+
+<http://purl.org/asc/1297.0/2008/for/110321> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321025> .
+
+<http://purl.org/asc/1297.0/2008/for/110504> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320801> .
+
+<http://purl.org/asc/1297.0/2008/for/110599> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320802>,
+        <http://purl.org/asc/1297.0/1998/rfcd/320804> .
+
+<http://purl.org/asc/1297.0/2008/for/110899> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320404> .
+
+<http://purl.org/asc/1297.0/2008/for/111399> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320999> .
+
+<http://purl.org/asc/1297.0/2008/for/119999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/329903>,
+        <http://purl.org/asc/1297.0/1998/rfcd/329999> .
+
+<http://purl.org/asc/1297.0/2008/for/120299> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/310299> .
+
+<http://purl.org/asc/1297.0/2008/for/120301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410401>,
+        <http://purl.org/asc/1297.0/1998/rfcd/410405> .
+
+<http://purl.org/asc/1297.0/2008/for/120303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410403>,
+        <http://purl.org/asc/1297.0/1998/rfcd/410404> .
+
+<http://purl.org/asc/1297.0/2008/for/129999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/319999> .
+
+<http://purl.org/asc/1297.0/2008/for/130202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330206> .
+
+<http://purl.org/asc/1297.0/2008/for/130208> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330202> .
+
+<http://purl.org/asc/1297.0/2008/for/130212> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330203> .
+
+<http://purl.org/asc/1297.0/2008/for/130302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330106> .
+
+<http://purl.org/asc/1297.0/2008/for/130312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330108> .
+
+<http://purl.org/asc/1297.0/2008/for/150199> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350105> .
+
+<http://purl.org/asc/1297.0/2008/for/150399> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350207>,
+        <http://purl.org/asc/1297.0/1998/rfcd/350213> .
+
+<http://purl.org/asc/1297.0/2008/for/150499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350604>,
+        <http://purl.org/asc/1297.0/1998/rfcd/350605>,
+        <http://purl.org/asc/1297.0/1998/rfcd/350606> .
+
+<http://purl.org/asc/1297.0/2008/for/150502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350206> .
+
+<http://purl.org/asc/1297.0/2008/for/150799> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350402>,
+        <http://purl.org/asc/1297.0/1998/rfcd/350403>,
+        <http://purl.org/asc/1297.0/1998/rfcd/350404>,
+        <http://purl.org/asc/1297.0/1998/rfcd/350499> .
+
+<http://purl.org/asc/1297.0/2008/for/160205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390403> .
+
+<http://purl.org/asc/1297.0/2008/for/160502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420301> .
+
+<http://purl.org/asc/1297.0/2008/for/160512> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370102>,
+        <http://purl.org/asc/1297.0/1998/rfcd/370203> .
+
+<http://purl.org/asc/1297.0/2008/for/160699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360103> .
+
+<http://purl.org/asc/1297.0/2008/for/169999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/369999> .
+
+<http://purl.org/asc/1297.0/2008/for/170103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380102> .
+
+<http://purl.org/asc/1297.0/2008/for/170299> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380306> .
+
+<http://purl.org/asc/1297.0/2008/for/180104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390109> .
+
+<http://purl.org/asc/1297.0/2008/for/180110> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390106> .
+
+<http://purl.org/asc/1297.0/2008/for/180112> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390119>,
+        <http://purl.org/asc/1297.0/1998/rfcd/390120> .
+
+<http://purl.org/asc/1297.0/2008/for/180119> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390305> .
+
+<http://purl.org/asc/1297.0/2008/for/180120> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390301> .
+
+<http://purl.org/asc/1297.0/2008/for/180121> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390201> .
+
+<http://purl.org/asc/1297.0/2008/for/180123> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390304> .
+
+<http://purl.org/asc/1297.0/2008/for/180199> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390112> .
+
+<http://purl.org/asc/1297.0/2008/for/190402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400103> .
+
+<http://purl.org/asc/1297.0/2008/for/190599> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410201> .
+
+<http://purl.org/asc/1297.0/2008/for/200304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420110> .
+
+<http://purl.org/asc/1297.0/2008/for/200305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420104> .
+
+<http://purl.org/asc/1297.0/2008/for/200308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420109> .
+
+<http://purl.org/asc/1297.0/2008/for/200314> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420115>,
+        <http://purl.org/asc/1297.0/1998/rfcd/420118>,
+        <http://purl.org/asc/1297.0/1998/rfcd/420119> .
+
+<http://purl.org/asc/1297.0/2008/for/200399> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420122> .
+
+<http://purl.org/asc/1297.0/2008/for/200509> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420209> .
+
+<http://purl.org/asc/1297.0/2008/for/200511> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420206> .
+
+<http://purl.org/asc/1297.0/2008/for/200512> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420207> .
+
+<http://purl.org/asc/1297.0/2008/for/200514> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420204> .
+
+<http://purl.org/asc/1297.0/2008/for/200526> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420217>,
+        <http://purl.org/asc/1297.0/1998/rfcd/420219> .
+
+<http://purl.org/asc/1297.0/2008/for/200599> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420220> .
+
+<http://purl.org/asc/1297.0/2008/for/209999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/429999> .
+
+<http://purl.org/asc/1297.0/2008/for/210105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430203> .
+
+<http://purl.org/asc/1297.0/2008/for/210201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400302> .
+
+<http://purl.org/asc/1297.0/2008/for/210310> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430106>,
+        <http://purl.org/asc/1297.0/1998/rfcd/430109> .
+
+<http://purl.org/asc/1297.0/2008/for/220204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390113>,
+        <http://purl.org/asc/1297.0/1998/rfcd/399901> .
+
+<http://purl.org/asc/1297.0/2008/for/220316> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440113>,
+        <http://purl.org/asc/1297.0/1998/rfcd/440115> .
+
+<http://purl.org/asc/1297.0/2008/for/220406> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440201>,
+        <http://purl.org/asc/1297.0/1998/rfcd/440202> .
+
+for08:FOR rdfs:subClassOf for:FOR .
+
+for: a owl:Ontology;
+    rdfs:label "FOR Ontology";
+    cc:license <http://creativecommons.org/licenses/by-nc/3.0/au/>;
+    cc:morePermissions <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1297.0>;
+    dc:creator "Griffith University",
+        "University of Southern Queensland";
+    dc:date "2011-02-28";
+    dc:rights "The source data is published by the Australian Bureau of Statistics, and can be found at the following address: http://www.abs.gov.au/ausstats/abs@.nsf/0/4AE1B46AE2048A28CA25741800044242 . This document is published under the Creative Commons Attribution License 3.0 Australia.";
+    dc:source <http://www.abs.gov.au/AUSSTATS/abs@.nsf/allprimarymainfeatures/5D99AEA1DD8AA8E0CA2574180005421C>;
+    rdfs:comment "An ontology that provides some base definitions for RFCD 1998 and FOR 2008 ontologies.";
+    rdfs:seeAlso <http://www.abs.gov.au/ausstats/abs@.nsf/mf/1297.0> .
+
+rfcd: skos:exactMatch for08: .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230117> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010206> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230118> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010406> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/230204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/239901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/010202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/240504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/020302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/249901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/029901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/249902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/029903> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/249903> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/029904> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030207> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030206> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030505> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030108> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250406> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250407> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250604> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030702> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/250699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/030799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/259901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/039904> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/259902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/039901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/259903> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/039903> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040314> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040310> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040312> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040313> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260109> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260115> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040406> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040502> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040608> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/260601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/040107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060406> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060412> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060409> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270209> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270210> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060410> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060506> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060502> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270305> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060505> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270306> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270307> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060504> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060705> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060704> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060805> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060807> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060808> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270604> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270701> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270702> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270703> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060208> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270704> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270705> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/060206> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/270803> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100109> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/279901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/069902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080610> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080609> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080606> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280109> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080605> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280110> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080611> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280111> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280112> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080608> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090609> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280210> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080110> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280211> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080111> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280212> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080108> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280305> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280406> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/280506> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090802> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090805> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091002> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091001> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290306> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091012> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290308> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091010> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290309> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091008> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090407> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290701> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290702> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290703> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091406> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290799> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290801> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090506> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290803> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090507> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/290804> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090502> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291001> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291003> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090905> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291004> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090903> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291005> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090904> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291006> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090702> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/090399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291604> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291605> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100606> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291704> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291708> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100599> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291709> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/100508> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291801> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091504> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291802> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091505> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/291803> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/091508> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/299901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/099901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/079901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070605> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300305> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300399> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070206> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300406> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070706> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070704> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070705> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300505> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070702> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300506> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070709> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300507> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070707> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300508> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070708> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300510> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070712> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300511> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070711> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300512> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070710> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070508> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070505> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300604> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070504> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300605> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300606> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300701> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300702> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300703> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300704> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300802> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050211> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300803> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050209> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300804> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/300903> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/070108> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/309901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/079902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/309902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/050203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/310202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110704> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110705> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110706> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110708> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110709> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320305> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110801> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110804> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110802> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110803> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320701> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320702> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110903> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320703> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110905> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320704> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320705> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110906> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320799> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320803> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/320901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321001> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321002> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321003> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321004> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321005> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321006> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321007> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321008> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321009> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110310> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321010> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321012> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110312> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321013> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110904> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321014> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321017> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110314> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321018> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110315> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321019> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321022> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110320> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321026> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321027> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321028> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110322> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321029> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110323> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321030> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110324> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111006> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111002> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111003> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111004> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111005> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111001> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111099> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111705> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111706> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111711> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111714> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111716> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111717> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321209> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111707> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321210> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111704> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321211> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111718> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321212> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321214> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111708> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321215> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111709> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321216> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111712> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321217> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/111710> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170114> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/321499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/329901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/110318> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/130309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160809> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/130305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/130306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/330109> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/130303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140199> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140207> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140208> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140209> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140210> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140211> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140212> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340210> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140219> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340211> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140217> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340212> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340213> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340214> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140218> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340404> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/340499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140399> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/349902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/149901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150312> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350209> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150314> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350210> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150313> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350211> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350212> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160513> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150605> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150606> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350505> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/140216> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350506> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150602> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350507> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350508> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350599> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150699> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350601> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/350603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/150403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/359999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/159999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160601> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160603> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160609> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160607> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160510> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160509> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160511> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/360204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160604> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160806> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160803> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160810> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160801> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160807> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160805> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160701> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160703> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160702> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160799> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160104> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370401> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370403> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370499> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370501> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370502> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370503> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370504> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370602> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160808> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370603> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/370699> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/379901> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/169901> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/379902> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/169902> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170112> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170101> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170109> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170113> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170107> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380109> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170110> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200402> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200406> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200408> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200407> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380299> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220312> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/380305> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/389999> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/179999> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180103> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180106> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180109> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180111> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180113> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390114> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180115> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390115> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180124> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390116> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180118> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390117> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180126> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390118> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/180125> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220105> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/390405> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/160202> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/080706> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/400303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410199> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190499> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410202> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190502> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190501> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410301> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/190299> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/410402> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/120302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200303> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200319> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420112> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200311> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420113> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200312> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420114> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200313> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420116> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200315> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420117> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200316> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420121> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200322> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420201> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200503> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200506> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200510> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200513> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420211> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200517> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420212> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200518> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420213> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200516> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420214> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200520> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420216> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200524> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420218> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200525> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420302> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200204> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420303> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200205> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420304> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200212> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420305> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200201> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420307> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200203> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/420308> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/200209> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210302> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430104> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210312> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430105> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430110> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210306> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430112> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210108> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210110> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/430207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/210102> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440101> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220301> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440102> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220304> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440103> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220305> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440106> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220308> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440107> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220309> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440108> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220313> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440109> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220314> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440110> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220319> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440111> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220310> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440112> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220307> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440114> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220311> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440203> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220404> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440204> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220401> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440205> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220403> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440206> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220407> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440207> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220405> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440208> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/170111> .
+
+<http://purl.org/asc/1297.0/1998/rfcd/440209> skos:exactMatch <http://purl.org/asc/1297.0/2008/for/220315> .
+
+for08: skos:exactMatch rfcd: .
+
+<http://purl.org/asc/1297.0/2008/for/010103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230104> .
+
+<http://purl.org/asc/1297.0/2008/for/010202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/239901> .
+
+<http://purl.org/asc/1297.0/2008/for/010206> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230117> .
+
+<http://purl.org/asc/1297.0/2008/for/010303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230118> .
+
+<http://purl.org/asc/1297.0/2008/for/010401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230204> .
+
+<http://purl.org/asc/1297.0/2008/for/010404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230201> .
+
+<http://purl.org/asc/1297.0/2008/for/010405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230203> .
+
+<http://purl.org/asc/1297.0/2008/for/010406> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/230202> .
+
+<http://purl.org/asc/1297.0/2008/for/020201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240301> .
+
+<http://purl.org/asc/1297.0/2008/for/020301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240501> .
+
+<http://purl.org/asc/1297.0/2008/for/020302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240504> .
+
+<http://purl.org/asc/1297.0/2008/for/020303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240502> .
+
+<http://purl.org/asc/1297.0/2008/for/020304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/240503> .
+
+<http://purl.org/asc/1297.0/2008/for/029901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/249901> .
+
+<http://purl.org/asc/1297.0/2008/for/029903> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/249902> .
+
+<http://purl.org/asc/1297.0/2008/for/029904> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/249903> .
+
+<http://purl.org/asc/1297.0/2008/for/030101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250402> .
+
+<http://purl.org/asc/1297.0/2008/for/030102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250403> .
+
+<http://purl.org/asc/1297.0/2008/for/030103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250404> .
+
+<http://purl.org/asc/1297.0/2008/for/030104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250406> .
+
+<http://purl.org/asc/1297.0/2008/for/030105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250407> .
+
+<http://purl.org/asc/1297.0/2008/for/030108> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250401> .
+
+<http://purl.org/asc/1297.0/2008/for/030199> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250499> .
+
+<http://purl.org/asc/1297.0/2008/for/030201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250204> .
+
+<http://purl.org/asc/1297.0/2008/for/030202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250206> .
+
+<http://purl.org/asc/1297.0/2008/for/030204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250202> .
+
+<http://purl.org/asc/1297.0/2008/for/030205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250205> .
+
+<http://purl.org/asc/1297.0/2008/for/030206> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250203> .
+
+<http://purl.org/asc/1297.0/2008/for/030207> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250201> .
+
+<http://purl.org/asc/1297.0/2008/for/030305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250504> .
+
+<http://purl.org/asc/1297.0/2008/for/030503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250301> .
+
+<http://purl.org/asc/1297.0/2008/for/030505> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250303> .
+
+<http://purl.org/asc/1297.0/2008/for/030602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250101> .
+
+<http://purl.org/asc/1297.0/2008/for/030603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250103> .
+
+<http://purl.org/asc/1297.0/2008/for/030604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250107> .
+
+<http://purl.org/asc/1297.0/2008/for/030701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250601> .
+
+<http://purl.org/asc/1297.0/2008/for/030702> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250604> .
+
+<http://purl.org/asc/1297.0/2008/for/030703> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250603> .
+
+<http://purl.org/asc/1297.0/2008/for/030799> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/250699> .
+
+<http://purl.org/asc/1297.0/2008/for/039901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/259902> .
+
+<http://purl.org/asc/1297.0/2008/for/039903> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/259903> .
+
+<http://purl.org/asc/1297.0/2008/for/039904> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/259901> .
+
+<http://purl.org/asc/1297.0/2008/for/040107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260601> .
+
+<http://purl.org/asc/1297.0/2008/for/040201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260302> .
+
+<http://purl.org/asc/1297.0/2008/for/040202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260304> .
+
+<http://purl.org/asc/1297.0/2008/for/040204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260303> .
+
+<http://purl.org/asc/1297.0/2008/for/040303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260109> .
+
+<http://purl.org/asc/1297.0/2008/for/040304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260102> .
+
+<http://purl.org/asc/1297.0/2008/for/040306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260101> .
+
+<http://purl.org/asc/1297.0/2008/for/040307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260106> .
+
+<http://purl.org/asc/1297.0/2008/for/040309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260105> .
+
+<http://purl.org/asc/1297.0/2008/for/040310> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260104> .
+
+<http://purl.org/asc/1297.0/2008/for/040312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260107> .
+
+<http://purl.org/asc/1297.0/2008/for/040313> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260108> .
+
+<http://purl.org/asc/1297.0/2008/for/040314> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260103> .
+
+<http://purl.org/asc/1297.0/2008/for/040401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260203> .
+
+<http://purl.org/asc/1297.0/2008/for/040404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260207> .
+
+<http://purl.org/asc/1297.0/2008/for/040405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260201> .
+
+<http://purl.org/asc/1297.0/2008/for/040406> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260202> .
+
+<http://purl.org/asc/1297.0/2008/for/040501> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260401> .
+
+<http://purl.org/asc/1297.0/2008/for/040502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260402> .
+
+<http://purl.org/asc/1297.0/2008/for/040503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260403> .
+
+<http://purl.org/asc/1297.0/2008/for/040599> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260499> .
+
+<http://purl.org/asc/1297.0/2008/for/040602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260115> .
+
+<http://purl.org/asc/1297.0/2008/for/040603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260501> .
+
+<http://purl.org/asc/1297.0/2008/for/040608> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/260502> .
+
+<http://purl.org/asc/1297.0/2008/for/050104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270704> .
+
+<http://purl.org/asc/1297.0/2008/for/050203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/309902> .
+
+<http://purl.org/asc/1297.0/2008/for/050204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300804> .
+
+<http://purl.org/asc/1297.0/2008/for/050209> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300803> .
+
+<http://purl.org/asc/1297.0/2008/for/050211> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300802> .
+
+<http://purl.org/asc/1297.0/2008/for/050302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300104> .
+
+<http://purl.org/asc/1297.0/2008/for/050303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300102> .
+
+<http://purl.org/asc/1297.0/2008/for/050304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300103> .
+
+<http://purl.org/asc/1297.0/2008/for/050305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300101> .
+
+<http://purl.org/asc/1297.0/2008/for/060101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270101> .
+
+<http://purl.org/asc/1297.0/2008/for/060103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270106> .
+
+<http://purl.org/asc/1297.0/2008/for/060104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270102> .
+
+<http://purl.org/asc/1297.0/2008/for/060105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270107> .
+
+<http://purl.org/asc/1297.0/2008/for/060106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270105> .
+
+<http://purl.org/asc/1297.0/2008/for/060107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270108> .
+
+<http://purl.org/asc/1297.0/2008/for/060204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270701> .
+
+<http://purl.org/asc/1297.0/2008/for/060205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270702> .
+
+<http://purl.org/asc/1297.0/2008/for/060206> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270705> .
+
+<http://purl.org/asc/1297.0/2008/for/060208> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270703> .
+
+<http://purl.org/asc/1297.0/2008/for/060401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270204> .
+
+<http://purl.org/asc/1297.0/2008/for/060402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270209> .
+
+<http://purl.org/asc/1297.0/2008/for/060403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270205> .
+
+<http://purl.org/asc/1297.0/2008/for/060406> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270206> .
+
+<http://purl.org/asc/1297.0/2008/for/060409> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270208> .
+
+<http://purl.org/asc/1297.0/2008/for/060410> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270210> .
+
+<http://purl.org/asc/1297.0/2008/for/060412> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270207> .
+
+<http://purl.org/asc/1297.0/2008/for/060501> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270301> .
+
+<http://purl.org/asc/1297.0/2008/for/060502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270304> .
+
+<http://purl.org/asc/1297.0/2008/for/060503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270306> .
+
+<http://purl.org/asc/1297.0/2008/for/060504> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270307> .
+
+<http://purl.org/asc/1297.0/2008/for/060505> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270305> .
+
+<http://purl.org/asc/1297.0/2008/for/060506> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270303> .
+
+<http://purl.org/asc/1297.0/2008/for/060601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270601> .
+
+<http://purl.org/asc/1297.0/2008/for/060602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270602> .
+
+<http://purl.org/asc/1297.0/2008/for/060603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270603> .
+
+<http://purl.org/asc/1297.0/2008/for/060604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270604> .
+
+<http://purl.org/asc/1297.0/2008/for/060699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270699> .
+
+<http://purl.org/asc/1297.0/2008/for/060701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270404> .
+
+<http://purl.org/asc/1297.0/2008/for/060704> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270403> .
+
+<http://purl.org/asc/1297.0/2008/for/060705> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270402> .
+
+<http://purl.org/asc/1297.0/2008/for/060805> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270502> .
+
+<http://purl.org/asc/1297.0/2008/for/060807> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270503> .
+
+<http://purl.org/asc/1297.0/2008/for/060808> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270504> .
+
+<http://purl.org/asc/1297.0/2008/for/069902> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/279901> .
+
+<http://purl.org/asc/1297.0/2008/for/070106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300901> .
+
+<http://purl.org/asc/1297.0/2008/for/070108> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300903> .
+
+<http://purl.org/asc/1297.0/2008/for/070201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300401> .
+
+<http://purl.org/asc/1297.0/2008/for/070202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300406> .
+
+<http://purl.org/asc/1297.0/2008/for/070203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300404> .
+
+<http://purl.org/asc/1297.0/2008/for/070204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300403> .
+
+<http://purl.org/asc/1297.0/2008/for/070205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300405> .
+
+<http://purl.org/asc/1297.0/2008/for/070206> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300402> .
+
+<http://purl.org/asc/1297.0/2008/for/070302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300205> .
+
+<http://purl.org/asc/1297.0/2008/for/070303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300201> .
+
+<http://purl.org/asc/1297.0/2008/for/070306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300202> .
+
+<http://purl.org/asc/1297.0/2008/for/070307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300206> .
+
+<http://purl.org/asc/1297.0/2008/for/070308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300204> .
+
+<http://purl.org/asc/1297.0/2008/for/070401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300703> .
+
+<http://purl.org/asc/1297.0/2008/for/070402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300704> .
+
+<http://purl.org/asc/1297.0/2008/for/070404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300702> .
+
+<http://purl.org/asc/1297.0/2008/for/070405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300701> .
+
+<http://purl.org/asc/1297.0/2008/for/070501> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300606> .
+
+<http://purl.org/asc/1297.0/2008/for/070503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300605> .
+
+<http://purl.org/asc/1297.0/2008/for/070504> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300604> .
+
+<http://purl.org/asc/1297.0/2008/for/070505> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300603> .
+
+<http://purl.org/asc/1297.0/2008/for/070508> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300601> .
+
+<http://purl.org/asc/1297.0/2008/for/070601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300302> .
+
+<http://purl.org/asc/1297.0/2008/for/070603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300303> .
+
+<http://purl.org/asc/1297.0/2008/for/070604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300305> .
+
+<http://purl.org/asc/1297.0/2008/for/070605> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300304> .
+
+<http://purl.org/asc/1297.0/2008/for/070699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300399> .
+
+<http://purl.org/asc/1297.0/2008/for/070701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300502> .
+
+<http://purl.org/asc/1297.0/2008/for/070702> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300505> .
+
+<http://purl.org/asc/1297.0/2008/for/070704> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300503> .
+
+<http://purl.org/asc/1297.0/2008/for/070705> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300504> .
+
+<http://purl.org/asc/1297.0/2008/for/070706> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300501> .
+
+<http://purl.org/asc/1297.0/2008/for/070707> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300507> .
+
+<http://purl.org/asc/1297.0/2008/for/070708> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300508> .
+
+<http://purl.org/asc/1297.0/2008/for/070709> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300506> .
+
+<http://purl.org/asc/1297.0/2008/for/070710> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300512> .
+
+<http://purl.org/asc/1297.0/2008/for/070711> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300511> .
+
+<http://purl.org/asc/1297.0/2008/for/070712> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300510> .
+
+<http://purl.org/asc/1297.0/2008/for/079901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/300105> .
+
+<http://purl.org/asc/1297.0/2008/for/079902> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/309901> .
+
+<http://purl.org/asc/1297.0/2008/for/080103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280202> .
+
+<http://purl.org/asc/1297.0/2008/for/080104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280208> .
+
+<http://purl.org/asc/1297.0/2008/for/080105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280201> .
+
+<http://purl.org/asc/1297.0/2008/for/080106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280203> .
+
+<http://purl.org/asc/1297.0/2008/for/080108> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280212> .
+
+<http://purl.org/asc/1297.0/2008/for/080110> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280210> .
+
+<http://purl.org/asc/1297.0/2008/for/080111> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280211> .
+
+<http://purl.org/asc/1297.0/2008/for/080201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280401> .
+
+<http://purl.org/asc/1297.0/2008/for/080203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280402> .
+
+<http://purl.org/asc/1297.0/2008/for/080204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280406> .
+
+<http://purl.org/asc/1297.0/2008/for/080305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280305> .
+
+<http://purl.org/asc/1297.0/2008/for/080307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280304> .
+
+<http://purl.org/asc/1297.0/2008/for/080308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280303> .
+
+<http://purl.org/asc/1297.0/2008/for/080309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280302> .
+
+<http://purl.org/asc/1297.0/2008/for/080401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280506> .
+
+<http://purl.org/asc/1297.0/2008/for/080402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280504> .
+
+<http://purl.org/asc/1297.0/2008/for/080403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280501> .
+
+<http://purl.org/asc/1297.0/2008/for/080602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280104> .
+
+<http://purl.org/asc/1297.0/2008/for/080603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280111> .
+
+<http://purl.org/asc/1297.0/2008/for/080604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280108> .
+
+<http://purl.org/asc/1297.0/2008/for/080605> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280109> .
+
+<http://purl.org/asc/1297.0/2008/for/080606> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280107> .
+
+<http://purl.org/asc/1297.0/2008/for/080608> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280112> .
+
+<http://purl.org/asc/1297.0/2008/for/080609> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280102> .
+
+<http://purl.org/asc/1297.0/2008/for/080610> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280101> .
+
+<http://purl.org/asc/1297.0/2008/for/080611> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280110> .
+
+<http://purl.org/asc/1297.0/2008/for/080706> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400201> .
+
+<http://purl.org/asc/1297.0/2008/for/090103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290203> .
+
+<http://purl.org/asc/1297.0/2008/for/090106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290202> .
+
+<http://purl.org/asc/1297.0/2008/for/090301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291503> .
+
+<http://purl.org/asc/1297.0/2008/for/090302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291504> .
+
+<http://purl.org/asc/1297.0/2008/for/090305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291502> .
+
+<http://purl.org/asc/1297.0/2008/for/090399> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291599> .
+
+<http://purl.org/asc/1297.0/2008/for/090403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290601> .
+
+<http://purl.org/asc/1297.0/2008/for/090404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290603> .
+
+<http://purl.org/asc/1297.0/2008/for/090407> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290602> .
+
+<http://purl.org/asc/1297.0/2008/for/090502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290804> .
+
+<http://purl.org/asc/1297.0/2008/for/090506> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290801> .
+
+<http://purl.org/asc/1297.0/2008/for/090507> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290803> .
+
+<http://purl.org/asc/1297.0/2008/for/090609> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/280204> .
+
+<http://purl.org/asc/1297.0/2008/for/090701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291103> .
+
+<http://purl.org/asc/1297.0/2008/for/090702> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291101> .
+
+<http://purl.org/asc/1297.0/2008/for/090703> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291104> .
+
+<http://purl.org/asc/1297.0/2008/for/090799> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291199> .
+
+<http://purl.org/asc/1297.0/2008/for/090802> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290102> .
+
+<http://purl.org/asc/1297.0/2008/for/090805> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290103> .
+
+<http://purl.org/asc/1297.0/2008/for/090901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291006> .
+
+<http://purl.org/asc/1297.0/2008/for/090902> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291001> .
+
+<http://purl.org/asc/1297.0/2008/for/090903> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291004> .
+
+<http://purl.org/asc/1297.0/2008/for/090904> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291005> .
+
+<http://purl.org/asc/1297.0/2008/for/090905> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291003> .
+
+<http://purl.org/asc/1297.0/2008/for/091001> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290303> .
+
+<http://purl.org/asc/1297.0/2008/for/091002> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290302> .
+
+<http://purl.org/asc/1297.0/2008/for/091008> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290309> .
+
+<http://purl.org/asc/1297.0/2008/for/091010> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290308> .
+
+<http://purl.org/asc/1297.0/2008/for/091012> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290306> .
+
+<http://purl.org/asc/1297.0/2008/for/091101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291204> .
+
+<http://purl.org/asc/1297.0/2008/for/091102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291201> .
+
+<http://purl.org/asc/1297.0/2008/for/091103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291205> .
+
+<http://purl.org/asc/1297.0/2008/for/091104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291202> .
+
+<http://purl.org/asc/1297.0/2008/for/091105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291203> .
+
+<http://purl.org/asc/1297.0/2008/for/091106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291206> .
+
+<http://purl.org/asc/1297.0/2008/for/091199> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291299> .
+
+<http://purl.org/asc/1297.0/2008/for/091201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291404> .
+
+<http://purl.org/asc/1297.0/2008/for/091404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290702> .
+
+<http://purl.org/asc/1297.0/2008/for/091405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290701> .
+
+<http://purl.org/asc/1297.0/2008/for/091406> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290703> .
+
+<http://purl.org/asc/1297.0/2008/for/091499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/290799> .
+
+<http://purl.org/asc/1297.0/2008/for/091504> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291801> .
+
+<http://purl.org/asc/1297.0/2008/for/091505> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291802> .
+
+<http://purl.org/asc/1297.0/2008/for/091508> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291803> .
+
+<http://purl.org/asc/1297.0/2008/for/099901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/299901> .
+
+<http://purl.org/asc/1297.0/2008/for/100109> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/270803> .
+
+<http://purl.org/asc/1297.0/2008/for/100203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291102> .
+
+<http://purl.org/asc/1297.0/2008/for/100503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291704> .
+
+<http://purl.org/asc/1297.0/2008/for/100508> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291709> .
+
+<http://purl.org/asc/1297.0/2008/for/100599> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291708>,
+        <http://purl.org/asc/1297.0/1998/rfcd/291710> .
+
+<http://purl.org/asc/1297.0/2008/for/100601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291601> .
+
+<http://purl.org/asc/1297.0/2008/for/100602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291603> .
+
+<http://purl.org/asc/1297.0/2008/for/100603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291604> .
+
+<http://purl.org/asc/1297.0/2008/for/100604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291602> .
+
+<http://purl.org/asc/1297.0/2008/for/100606> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/291605> .
+
+<http://purl.org/asc/1297.0/2008/for/110102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320302> .
+
+<http://purl.org/asc/1297.0/2008/for/110105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320304> .
+
+<http://purl.org/asc/1297.0/2008/for/110106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320305> .
+
+<http://purl.org/asc/1297.0/2008/for/110201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321003> .
+
+<http://purl.org/asc/1297.0/2008/for/110202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321008> .
+
+<http://purl.org/asc/1297.0/2008/for/110203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321027> .
+
+<http://purl.org/asc/1297.0/2008/for/110301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321001> .
+
+<http://purl.org/asc/1297.0/2008/for/110302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320301> .
+
+<http://purl.org/asc/1297.0/2008/for/110304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321002> .
+
+<http://purl.org/asc/1297.0/2008/for/110306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321004> .
+
+<http://purl.org/asc/1297.0/2008/for/110307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321006> .
+
+<http://purl.org/asc/1297.0/2008/for/110308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321007> .
+
+<http://purl.org/asc/1297.0/2008/for/110309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321010> .
+
+<http://purl.org/asc/1297.0/2008/for/110310> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321009> .
+
+<http://purl.org/asc/1297.0/2008/for/110312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321012> .
+
+<http://purl.org/asc/1297.0/2008/for/110314> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321017> .
+
+<http://purl.org/asc/1297.0/2008/for/110315> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321018> .
+
+<http://purl.org/asc/1297.0/2008/for/110318> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/329901> .
+
+<http://purl.org/asc/1297.0/2008/for/110320> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321022> .
+
+<http://purl.org/asc/1297.0/2008/for/110322> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321028> .
+
+<http://purl.org/asc/1297.0/2008/for/110323> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321029> .
+
+<http://purl.org/asc/1297.0/2008/for/110324> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321030> .
+
+<http://purl.org/asc/1297.0/2008/for/110401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321302> .
+
+<http://purl.org/asc/1297.0/2008/for/110402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321303> .
+
+<http://purl.org/asc/1297.0/2008/for/110404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321301> .
+
+<http://purl.org/asc/1297.0/2008/for/110501> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320803> .
+
+<http://purl.org/asc/1297.0/2008/for/110601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321402> .
+
+<http://purl.org/asc/1297.0/2008/for/110602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321401> .
+
+<http://purl.org/asc/1297.0/2008/for/110603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321403> .
+
+<http://purl.org/asc/1297.0/2008/for/110604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321405> .
+
+<http://purl.org/asc/1297.0/2008/for/110699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321499> .
+
+<http://purl.org/asc/1297.0/2008/for/110701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320201> .
+
+<http://purl.org/asc/1297.0/2008/for/110703> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320207> .
+
+<http://purl.org/asc/1297.0/2008/for/110704> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320202> .
+
+<http://purl.org/asc/1297.0/2008/for/110705> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320203> .
+
+<http://purl.org/asc/1297.0/2008/for/110706> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320204> .
+
+<http://purl.org/asc/1297.0/2008/for/110708> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320205> .
+
+<http://purl.org/asc/1297.0/2008/for/110709> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320206> .
+
+<http://purl.org/asc/1297.0/2008/for/110801> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320401> .
+
+<http://purl.org/asc/1297.0/2008/for/110802> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320403> .
+
+<http://purl.org/asc/1297.0/2008/for/110803> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320405> .
+
+<http://purl.org/asc/1297.0/2008/for/110804> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320402> .
+
+<http://purl.org/asc/1297.0/2008/for/110901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320701> .
+
+<http://purl.org/asc/1297.0/2008/for/110902> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320704> .
+
+<http://purl.org/asc/1297.0/2008/for/110903> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320702> .
+
+<http://purl.org/asc/1297.0/2008/for/110904> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321013> .
+
+<http://purl.org/asc/1297.0/2008/for/110905> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320703> .
+
+<http://purl.org/asc/1297.0/2008/for/110906> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320705> .
+
+<http://purl.org/asc/1297.0/2008/for/110999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320799> .
+
+<http://purl.org/asc/1297.0/2008/for/111001> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321106> .
+
+<http://purl.org/asc/1297.0/2008/for/111002> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321102> .
+
+<http://purl.org/asc/1297.0/2008/for/111003> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321103> .
+
+<http://purl.org/asc/1297.0/2008/for/111004> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321104> .
+
+<http://purl.org/asc/1297.0/2008/for/111005> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321105> .
+
+<http://purl.org/asc/1297.0/2008/for/111006> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321101> .
+
+<http://purl.org/asc/1297.0/2008/for/111099> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321199> .
+
+<http://purl.org/asc/1297.0/2008/for/111302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320901> .
+
+<http://purl.org/asc/1297.0/2008/for/111401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321005> .
+
+<http://purl.org/asc/1297.0/2008/for/111402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321014> .
+
+<http://purl.org/asc/1297.0/2008/for/111403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321019> .
+
+<http://purl.org/asc/1297.0/2008/for/111404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321026> .
+
+<http://purl.org/asc/1297.0/2008/for/111601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320602> .
+
+<http://purl.org/asc/1297.0/2008/for/111602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320601> .
+
+<http://purl.org/asc/1297.0/2008/for/111603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320603> .
+
+<http://purl.org/asc/1297.0/2008/for/111699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/320699> .
+
+<http://purl.org/asc/1297.0/2008/for/111703> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321212> .
+
+<http://purl.org/asc/1297.0/2008/for/111704> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321210> .
+
+<http://purl.org/asc/1297.0/2008/for/111705> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321201> .
+
+<http://purl.org/asc/1297.0/2008/for/111706> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321202> .
+
+<http://purl.org/asc/1297.0/2008/for/111707> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321209> .
+
+<http://purl.org/asc/1297.0/2008/for/111708> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321214> .
+
+<http://purl.org/asc/1297.0/2008/for/111709> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321215> .
+
+<http://purl.org/asc/1297.0/2008/for/111710> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321217> .
+
+<http://purl.org/asc/1297.0/2008/for/111711> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321203> .
+
+<http://purl.org/asc/1297.0/2008/for/111712> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321216> .
+
+<http://purl.org/asc/1297.0/2008/for/111714> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321204> .
+
+<http://purl.org/asc/1297.0/2008/for/111716> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321206> .
+
+<http://purl.org/asc/1297.0/2008/for/111717> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321208> .
+
+<http://purl.org/asc/1297.0/2008/for/111718> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321211> .
+
+<http://purl.org/asc/1297.0/2008/for/120102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/310102> .
+
+<http://purl.org/asc/1297.0/2008/for/120106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/310106> .
+
+<http://purl.org/asc/1297.0/2008/for/120107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/310104> .
+
+<http://purl.org/asc/1297.0/2008/for/120201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/310202> .
+
+<http://purl.org/asc/1297.0/2008/for/120202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/310201> .
+
+<http://purl.org/asc/1297.0/2008/for/120302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410402> .
+
+<http://purl.org/asc/1297.0/2008/for/130303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330109> .
+
+<http://purl.org/asc/1297.0/2008/for/130305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330105> .
+
+<http://purl.org/asc/1297.0/2008/for/130306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330107> .
+
+<http://purl.org/asc/1297.0/2008/for/130309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330101> .
+
+<http://purl.org/asc/1297.0/2008/for/140101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340302> .
+
+<http://purl.org/asc/1297.0/2008/for/140102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340102> .
+
+<http://purl.org/asc/1297.0/2008/for/140103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340103> .
+
+<http://purl.org/asc/1297.0/2008/for/140104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340101> .
+
+<http://purl.org/asc/1297.0/2008/for/140199> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340199> .
+
+<http://purl.org/asc/1297.0/2008/for/140201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340201> .
+
+<http://purl.org/asc/1297.0/2008/for/140202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340213> .
+
+<http://purl.org/asc/1297.0/2008/for/140203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340301> .
+
+<http://purl.org/asc/1297.0/2008/for/140205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340202> .
+
+<http://purl.org/asc/1297.0/2008/for/140207> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340203> .
+
+<http://purl.org/asc/1297.0/2008/for/140208> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340204> .
+
+<http://purl.org/asc/1297.0/2008/for/140209> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340205> .
+
+<http://purl.org/asc/1297.0/2008/for/140210> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340206> .
+
+<http://purl.org/asc/1297.0/2008/for/140211> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340207> .
+
+<http://purl.org/asc/1297.0/2008/for/140212> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340208> .
+
+<http://purl.org/asc/1297.0/2008/for/140216> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350505> .
+
+<http://purl.org/asc/1297.0/2008/for/140217> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340211> .
+
+<http://purl.org/asc/1297.0/2008/for/140218> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340214> .
+
+<http://purl.org/asc/1297.0/2008/for/140219> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340210> .
+
+<http://purl.org/asc/1297.0/2008/for/140301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340404> .
+
+<http://purl.org/asc/1297.0/2008/for/140302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340402> .
+
+<http://purl.org/asc/1297.0/2008/for/140303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340401> .
+
+<http://purl.org/asc/1297.0/2008/for/140304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340405> .
+
+<http://purl.org/asc/1297.0/2008/for/140305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340403> .
+
+<http://purl.org/asc/1297.0/2008/for/140399> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340499> .
+
+<http://purl.org/asc/1297.0/2008/for/149901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/349902> .
+
+<http://purl.org/asc/1297.0/2008/for/150102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350103> .
+
+<http://purl.org/asc/1297.0/2008/for/150103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350101> .
+
+<http://purl.org/asc/1297.0/2008/for/150104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350106> .
+
+<http://purl.org/asc/1297.0/2008/for/150105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350102> .
+
+<http://purl.org/asc/1297.0/2008/for/150107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350104> .
+
+<http://purl.org/asc/1297.0/2008/for/150201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350301> .
+
+<http://purl.org/asc/1297.0/2008/for/150202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350302> .
+
+<http://purl.org/asc/1297.0/2008/for/150203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350303> .
+
+<http://purl.org/asc/1297.0/2008/for/150204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350304> .
+
+<http://purl.org/asc/1297.0/2008/for/150302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350202> .
+
+<http://purl.org/asc/1297.0/2008/for/150305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350201> .
+
+<http://purl.org/asc/1297.0/2008/for/150306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350203> .
+
+<http://purl.org/asc/1297.0/2008/for/150307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350211> .
+
+<http://purl.org/asc/1297.0/2008/for/150308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350212> .
+
+<http://purl.org/asc/1297.0/2008/for/150309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350205> .
+
+<http://purl.org/asc/1297.0/2008/for/150312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350208> .
+
+<http://purl.org/asc/1297.0/2008/for/150313> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350210> .
+
+<http://purl.org/asc/1297.0/2008/for/150314> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350209> .
+
+<http://purl.org/asc/1297.0/2008/for/150401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350602> .
+
+<http://purl.org/asc/1297.0/2008/for/150402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350601> .
+
+<http://purl.org/asc/1297.0/2008/for/150403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350603> .
+
+<http://purl.org/asc/1297.0/2008/for/150601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350503> .
+
+<http://purl.org/asc/1297.0/2008/for/150602> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350506> .
+
+<http://purl.org/asc/1297.0/2008/for/150603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350507> .
+
+<http://purl.org/asc/1297.0/2008/for/150604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350508> .
+
+<http://purl.org/asc/1297.0/2008/for/150605> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350502> .
+
+<http://purl.org/asc/1297.0/2008/for/150606> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350504> .
+
+<http://purl.org/asc/1297.0/2008/for/150699> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350599> .
+
+<http://purl.org/asc/1297.0/2008/for/150701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350401> .
+
+<http://purl.org/asc/1297.0/2008/for/159999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/359999> .
+
+<http://purl.org/asc/1297.0/2008/for/160102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370301> .
+
+<http://purl.org/asc/1297.0/2008/for/160103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370303> .
+
+<http://purl.org/asc/1297.0/2008/for/160104> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370302> .
+
+<http://purl.org/asc/1297.0/2008/for/160202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390405> .
+
+<http://purl.org/asc/1297.0/2008/for/160301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370504> .
+
+<http://purl.org/asc/1297.0/2008/for/160302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370503> .
+
+<http://purl.org/asc/1297.0/2008/for/160303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370502> .
+
+<http://purl.org/asc/1297.0/2008/for/160305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370501> .
+
+<http://purl.org/asc/1297.0/2008/for/160401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/340212> .
+
+<http://purl.org/asc/1297.0/2008/for/160402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370403> .
+
+<http://purl.org/asc/1297.0/2008/for/160403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370402> .
+
+<http://purl.org/asc/1297.0/2008/for/160404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370401> .
+
+<http://purl.org/asc/1297.0/2008/for/160499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370499> .
+
+<http://purl.org/asc/1297.0/2008/for/160509> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360202> .
+
+<http://purl.org/asc/1297.0/2008/for/160510> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360201> .
+
+<http://purl.org/asc/1297.0/2008/for/160511> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360203> .
+
+<http://purl.org/asc/1297.0/2008/for/160513> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/350501> .
+
+<http://purl.org/asc/1297.0/2008/for/160601> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360101> .
+
+<http://purl.org/asc/1297.0/2008/for/160603> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360102> .
+
+<http://purl.org/asc/1297.0/2008/for/160604> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360204> .
+
+<http://purl.org/asc/1297.0/2008/for/160607> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360105> .
+
+<http://purl.org/asc/1297.0/2008/for/160609> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/360104> .
+
+<http://purl.org/asc/1297.0/2008/for/160701> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370201> .
+
+<http://purl.org/asc/1297.0/2008/for/160702> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370204> .
+
+<http://purl.org/asc/1297.0/2008/for/160703> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370202> .
+
+<http://purl.org/asc/1297.0/2008/for/160799> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370299> .
+
+<http://purl.org/asc/1297.0/2008/for/160801> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370105> .
+
+<http://purl.org/asc/1297.0/2008/for/160803> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370103> .
+
+<http://purl.org/asc/1297.0/2008/for/160805> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370107> .
+
+<http://purl.org/asc/1297.0/2008/for/160806> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370101> .
+
+<http://purl.org/asc/1297.0/2008/for/160807> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370106> .
+
+<http://purl.org/asc/1297.0/2008/for/160808> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370602> .
+
+<http://purl.org/asc/1297.0/2008/for/160809> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330103> .
+
+<http://purl.org/asc/1297.0/2008/for/160810> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370104> .
+
+<http://purl.org/asc/1297.0/2008/for/169901> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/379901> .
+
+<http://purl.org/asc/1297.0/2008/for/169902> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/379902> .
+
+<http://purl.org/asc/1297.0/2008/for/170101> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380103> .
+
+<http://purl.org/asc/1297.0/2008/for/170102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380106> .
+
+<http://purl.org/asc/1297.0/2008/for/170106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380107> .
+
+<http://purl.org/asc/1297.0/2008/for/170107> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380108> .
+
+<http://purl.org/asc/1297.0/2008/for/170109> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380104> .
+
+<http://purl.org/asc/1297.0/2008/for/170110> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380109> .
+
+<http://purl.org/asc/1297.0/2008/for/170111> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440208> .
+
+<http://purl.org/asc/1297.0/2008/for/170112> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380101> .
+
+<http://purl.org/asc/1297.0/2008/for/170113> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380105> .
+
+<http://purl.org/asc/1297.0/2008/for/170114> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/321404> .
+
+<http://purl.org/asc/1297.0/2008/for/170201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380303> .
+
+<http://purl.org/asc/1297.0/2008/for/170203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380305> .
+
+<http://purl.org/asc/1297.0/2008/for/170204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380302> .
+
+<http://purl.org/asc/1297.0/2008/for/170205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380304> .
+
+<http://purl.org/asc/1297.0/2008/for/179999> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/389999> .
+
+<http://purl.org/asc/1297.0/2008/for/180103> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390101> .
+
+<http://purl.org/asc/1297.0/2008/for/180105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390104> .
+
+<http://purl.org/asc/1297.0/2008/for/180106> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390102> .
+
+<http://purl.org/asc/1297.0/2008/for/180109> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390105> .
+
+<http://purl.org/asc/1297.0/2008/for/180111> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390107> .
+
+<http://purl.org/asc/1297.0/2008/for/180113> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390108> .
+
+<http://purl.org/asc/1297.0/2008/for/180115> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390114> .
+
+<http://purl.org/asc/1297.0/2008/for/180118> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390116> .
+
+<http://purl.org/asc/1297.0/2008/for/180124> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390115> .
+
+<http://purl.org/asc/1297.0/2008/for/180125> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390118> .
+
+<http://purl.org/asc/1297.0/2008/for/180126> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390117> .
+
+<http://purl.org/asc/1297.0/2008/for/190201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410302> .
+
+<http://purl.org/asc/1297.0/2008/for/190204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410301> .
+
+<http://purl.org/asc/1297.0/2008/for/190299> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410304> .
+
+<http://purl.org/asc/1297.0/2008/for/190301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400101> .
+
+<http://purl.org/asc/1297.0/2008/for/190303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400102> .
+
+<http://purl.org/asc/1297.0/2008/for/190403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410103> .
+
+<http://purl.org/asc/1297.0/2008/for/190499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410199> .
+
+<http://purl.org/asc/1297.0/2008/for/190501> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410204> .
+
+<http://purl.org/asc/1297.0/2008/for/190502> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410202> .
+
+<http://purl.org/asc/1297.0/2008/for/190503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/410203> .
+
+<http://purl.org/asc/1297.0/2008/for/200201> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420305> .
+
+<http://purl.org/asc/1297.0/2008/for/200203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420307> .
+
+<http://purl.org/asc/1297.0/2008/for/200204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420302> .
+
+<http://purl.org/asc/1297.0/2008/for/200205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420303> .
+
+<http://purl.org/asc/1297.0/2008/for/200209> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420308> .
+
+<http://purl.org/asc/1297.0/2008/for/200212> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420304> .
+
+<http://purl.org/asc/1297.0/2008/for/200303> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420102> .
+
+<http://purl.org/asc/1297.0/2008/for/200306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420106> .
+
+<http://purl.org/asc/1297.0/2008/for/200307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420107> .
+
+<http://purl.org/asc/1297.0/2008/for/200309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420108> .
+
+<http://purl.org/asc/1297.0/2008/for/200311> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420112> .
+
+<http://purl.org/asc/1297.0/2008/for/200312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420113> .
+
+<http://purl.org/asc/1297.0/2008/for/200313> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420114> .
+
+<http://purl.org/asc/1297.0/2008/for/200315> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420116> .
+
+<http://purl.org/asc/1297.0/2008/for/200316> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420117> .
+
+<http://purl.org/asc/1297.0/2008/for/200319> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420103> .
+
+<http://purl.org/asc/1297.0/2008/for/200322> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420121> .
+
+<http://purl.org/asc/1297.0/2008/for/200401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380201> .
+
+<http://purl.org/asc/1297.0/2008/for/200402> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380202> .
+
+<http://purl.org/asc/1297.0/2008/for/200403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380203> .
+
+<http://purl.org/asc/1297.0/2008/for/200404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380204> .
+
+<http://purl.org/asc/1297.0/2008/for/200405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380205> .
+
+<http://purl.org/asc/1297.0/2008/for/200406> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380206> .
+
+<http://purl.org/asc/1297.0/2008/for/200407> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380208> .
+
+<http://purl.org/asc/1297.0/2008/for/200408> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380207> .
+
+<http://purl.org/asc/1297.0/2008/for/200499> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380299> .
+
+<http://purl.org/asc/1297.0/2008/for/200503> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420201> .
+
+<http://purl.org/asc/1297.0/2008/for/200506> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420203> .
+
+<http://purl.org/asc/1297.0/2008/for/200510> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420205> .
+
+<http://purl.org/asc/1297.0/2008/for/200513> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420208> .
+
+<http://purl.org/asc/1297.0/2008/for/200516> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420213> .
+
+<http://purl.org/asc/1297.0/2008/for/200517> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420211> .
+
+<http://purl.org/asc/1297.0/2008/for/200518> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420212> .
+
+<http://purl.org/asc/1297.0/2008/for/200520> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420214> .
+
+<http://purl.org/asc/1297.0/2008/for/200524> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420216> .
+
+<http://purl.org/asc/1297.0/2008/for/200525> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/420218> .
+
+<http://purl.org/asc/1297.0/2008/for/210102> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430207> .
+
+<http://purl.org/asc/1297.0/2008/for/210108> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430205> .
+
+<http://purl.org/asc/1297.0/2008/for/210110> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430206> .
+
+<http://purl.org/asc/1297.0/2008/for/210203> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400303> .
+
+<http://purl.org/asc/1297.0/2008/for/210204> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/400301> .
+
+<http://purl.org/asc/1297.0/2008/for/210302> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430102> .
+
+<http://purl.org/asc/1297.0/2008/for/210304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430112> .
+
+<http://purl.org/asc/1297.0/2008/for/210305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430107> .
+
+<http://purl.org/asc/1297.0/2008/for/210306> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430110> .
+
+<http://purl.org/asc/1297.0/2008/for/210307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430108> .
+
+<http://purl.org/asc/1297.0/2008/for/210308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430105> .
+
+<http://purl.org/asc/1297.0/2008/for/210312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/430104> .
+
+<http://purl.org/asc/1297.0/2008/for/220105> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/390204> .
+
+<http://purl.org/asc/1297.0/2008/for/220202> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/330102> .
+
+<http://purl.org/asc/1297.0/2008/for/220205> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370603> .
+
+<http://purl.org/asc/1297.0/2008/for/220299> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/370699> .
+
+<http://purl.org/asc/1297.0/2008/for/220301> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440101> .
+
+<http://purl.org/asc/1297.0/2008/for/220304> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440102> .
+
+<http://purl.org/asc/1297.0/2008/for/220305> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440103> .
+
+<http://purl.org/asc/1297.0/2008/for/220307> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440112> .
+
+<http://purl.org/asc/1297.0/2008/for/220308> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440106> .
+
+<http://purl.org/asc/1297.0/2008/for/220309> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440107> .
+
+<http://purl.org/asc/1297.0/2008/for/220310> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440111> .
+
+<http://purl.org/asc/1297.0/2008/for/220311> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440114> .
+
+<http://purl.org/asc/1297.0/2008/for/220312> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/380301> .
+
+<http://purl.org/asc/1297.0/2008/for/220313> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440108> .
+
+<http://purl.org/asc/1297.0/2008/for/220314> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440109> .
+
+<http://purl.org/asc/1297.0/2008/for/220315> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440209> .
+
+<http://purl.org/asc/1297.0/2008/for/220319> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440110> .
+
+<http://purl.org/asc/1297.0/2008/for/220401> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440204> .
+
+<http://purl.org/asc/1297.0/2008/for/220403> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440205> .
+
+<http://purl.org/asc/1297.0/2008/for/220404> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440203> .
+
+<http://purl.org/asc/1297.0/2008/for/220405> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440207> .
+
+<http://purl.org/asc/1297.0/2008/for/220407> skos:exactMatch <http://purl.org/asc/1297.0/1998/rfcd/440206> .
+
+for:FOR a owl:Class;
+    rdfs:label "FOR code";
+    rdfs:comment "Superclass for FOR codes";
+    rdfs:subClassOf skos:Concept .
+

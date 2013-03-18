@@ -1,0 +1,77 @@
+/* $This file is distributed under the terms of the license in /doc/license.txt$ */
+
+package au.edu.gu.vivo.servlet.setup;
+
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+import org.apache.commons.dbcp.BasicDataSource;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+import com.hp.hpl.jena.ontology.OntModel;
+
+import edu.cornell.mannlib.vitro.webapp.config.ConfigurationProperties;
+import edu.cornell.mannlib.vitro.webapp.dao.jena.ModelContext;
+import edu.cornell.mannlib.vitro.webapp.dao.jena.OntModelSelector;
+//import edu.cornell.mannlib.vitro.webapp.servlet.setup.AbortStartup;
+import edu.cornell.mannlib.vitro.webapp.servlet.setup.JenaDataSourceSetup;
+
+/**
+ * This class attaches a configurable list of SDB Models as submodels to the ABox. 
+ * 
+ * @author gweis
+ */
+public class ABoxSubModelsSetup extends JenaDataSourceSetup implements ServletContextListener {
+
+	private static final Log log = LogFactory.getLog(ABoxSubModelsSetup.class);
+	
+	public ABoxSubModelsSetup() {
+	    
+	}
+	
+	public void contextInitialized(ServletContextEvent sce) {
+	    /*
+	    if (AbortStartup.isStartupAborted(sce.getServletContext())) {
+                return;
+            }
+	    */
+	    ServletContext ctx = sce.getServletContext();
+	    OntModel aboxOntModel = null;
+            try {
+                OntModelSelector baseOms = ModelContext.getBaseOntModelSelector(ctx);
+                aboxOntModel = baseOms.getABoxModel();
+            } catch (Exception e) {
+                    log.error("No baseOntModel found to which to attach assembled models");
+                    return;
+            }
+            
+            String kbGraphs = ConfigurationProperties.getBean(ctx).getProperty(
+                    "gu.kbGraphs");
+            BasicDataSource bds = getApplicationDataSource(ctx);
+            for (String graphName: kbGraphs.split("\\s+")) {
+                // create a db model with given graph name and add as submodel to aboxAssertions
+                if (! graphName.isEmpty()) {
+                  aboxOntModel.addSubModel(makeDBModel(bds, graphName, DB_ONT_MODEL_SPEC, TripleStoreType.SDB, ctx));
+                }
+            }
+            
+	}
+	
+	public void contextDestroyed(ServletContextEvent sce) {
+	    // AssembleModels keeps a list of created Models.
+	    // TODO: shall I close my models here too?
+	    //       also AssembleModels set's up submodels as writeable...
+	    //       if we want this here too, then we sholuld use this class instead of the custom
+	    //       listener here.
+	    
+		//for (Model model : assembledModels) {
+		//	if (model != null) {
+		//		model.close();
+		//	}
+		//}
+	}
+
+}

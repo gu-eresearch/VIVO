@@ -1,0 +1,15 @@
+PREFIX vivo: <http://vivoweb.org/ontology/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+     ?containingEvent rdfs:label ?containingEventName
+} WHERE {
+     PERSON_URI vivo:hasPresenterRole ?presenterRole .
+ 
+     {?presenterRole vivo:roleRealizedIn ?presentation}
+        union
+     {?presenterRole vivo:roleIn ?presentation}   
+
+     ?presentation vivo:eventWithin ?containingEvent .
+     ?containingEvent rdfs:label ?containingEventName
+}

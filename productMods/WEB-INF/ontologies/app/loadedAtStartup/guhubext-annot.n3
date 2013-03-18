@@ -1,0 +1,72 @@
+@prefix afn:     <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix :        <http://vitro.mannlib.cornell.edu/ns/vitro/public#> .
+@prefix scires:  <http://vivoweb.org/ontology/scientific-research#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl:    <http://www.w3.org/2003/11/swrl#> .
+@prefix vitro:   <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix event:   <http://purl.org/NET/c4dm/event.owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcelem:  <http://purl.org/dc/elements/1.1/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix geo:     <http://aims.fao.org/aos/geopolitical.owl#> .
+@prefix pvs:     <http://vivoweb.org/ontology/provenance-support#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix swrlb:   <http://www.w3.org/2003/11/swrlb#> .
+@prefix core:    <http://vivoweb.org/ontology/core#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix ero:     <http://purl.obolibrary.org/obo/> .
+@prefix roles:   <http://vitro.mannlib.cornell.edu/ns/vitro/role#> .
+@prefix vivoweb: <http://vivoweb.org/ontology#> .
+
+@prefix guhub:   <http://research-hub.griffith.edu.au/individual/> .
+@prefix guhubext:  <http://griffith.edu.au/ontology/hubextensions/> .
+@prefix ands:    <http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#> .
+
+guhubext:ResearchHubProject       vitro:inClassGroup guhub:vitroClassGroupprojects .
+
+core:Exhibit
+      rdfs:label "Exhibit"@en-US ;
+      rdfs:subClassOf owl:Thing , core:InformationResource ;
+      vitro:hiddenFromDisplayBelowRoleLevelAnnot <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+      vitro:inClassGroup <http://vivoweb.org/ontology#vitroClassGrouppublications> .
+
+#Display Templates
+guhubext:ResearchHubPublication vitro:customDisplayViewAnnot "individual--gu-radpublicationNew.ftl"^^xsd:string .
+guhubext:RADPublication vitro:customDisplayViewAnnot "individual--gu-radpublicationNew.ftl"^^xsd:string .
+guhubext:ResearchHubProject vitro:customDisplayViewAnnot "individual--foaf-projectNew.ftl"^^xsd:string .
+guhubext:GrantProject vitro:customDisplayViewAnnot "individual--foaf-projectNew.ftl"^^xsd:string .
+guhubext:ResearchHubPerson vitro:customDisplayViewAnnot "individual--gu-radpersonNew.ftl"^^xsd:string .
+guhubext:ResearchHubGroup vitro:customDisplayViewAnnot "individual--gu-radgroupNew.ftl"^^xsd:string .
+ands:ResearchData vitro:customDisplayViewAnnot "individual--ands-researchdataNew.ftl"^^xsd:string .
+core:Service vitro:customDisplayViewAnnot "individual--core-serviceNew.ftl"^^xsd:string .
+guhubext:ResearchHubService vitro:customDisplayViewAnnot "individual--core-serviceNew.ftl"^^xsd:string .
+core:FundingOrganization vitro:customDisplayViewAnnot "individual--gu-fundingOrgNew.ftl"^^xsd:string .
+core:SubjectArea vitro:customDisplayViewAnnot "individual--core-subjectarea.ftl"^^xsd:string .
+core:ResearchArea vitro:customDisplayViewAnnot "individual--core-subjectarea.ftl"^^xsd:string .
+guhubext:ResearchHubInactive vitro:customDisplayViewAnnot "individual--inactive.ftl"^^xsd:string .
+bibo:Thesis vitro:customDisplayViewAnnot "individual--bibo-thesis.ftl"^^xsd:string .
+
+#Editing Templates
+guhubext:hasMediaKeyword vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManageMediaKeywordsForIndividualGenerator"^^xsd:string .
+guhubext:hasProfessionalExperienceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddProfessionalExperienceRoleToPersonGenerator"^^xsd:string .
+guhubext:hasHonoursSupervisorRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddHonoursSupervisorRoleToPersonGenerator"^^xsd:string .
+guhubext:hasAcademicExperienceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddAcademicExperienceRoleToPersonGenerator"^^xsd:string .
+guhubext:hasRHDSupervisorRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddRHDSupervisorRoleToPersonGenerator"^^xsd:string .
+guhubext:hasExternalServiceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddExternalServiceRoleToPersonGenerator"^^xsd:string .
+guhubext:hasProfessionalMembership vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddMembershipOfProfessionalOrganisationRoleToPersonGenerator"^^xsd:string .
+guhubext:hasExternalAdvisory vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddExternalAdvisoryRoleToPersonGenerator"^^xsd:string .
+guhubext:hasEditorialRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddEditorialRoleToPersonGenerator"^^xsd:string .
+guhubext:hasVisitingAppointment vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddVisitingAppointmentRoleToPersonGenerator"^^xsd:string .
+guhubext:hasGovernmentRepresentation vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddGovernmentRepresentationRoleToPersonGenerator"^^xsd:string .
+guhubext:hasInternalServiceRole vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddInternalServiceRoleToPersonGenerator"^^xsd:string .
+
+
+core:hasResearchArea vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManageResearchKeywordsForIndividualGenerator"^^xsd:string .
+core:hasSubjectArea vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.AddAssociatedConceptGenerator"^^xsd:string .
+core:awardOrHonor vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.PersonHasAwardOrHonorGenerator"^^xsd:string .
+core:webpage vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManageWebpagesForIndividualGenerator"^^xsd:string .
+core:educationalTraining vitro:customEntryFormAnnot "edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.PersonHasEducationalTrainingNew"^^xsd:string .

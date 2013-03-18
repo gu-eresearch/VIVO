@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-select>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX ands: &lt;http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#&gt;
+        
+        SELECT DISTINCT ?address 
+                        ?addressTitle
+                        ?postalAddress
+                        ?campus
+                        ?location
+                         WHERE {
+            ?subject ?property ?address  
+            OPTIONAL { ?address rdfs:label ?addressTitle  }
+            OPTIONAL { ?address core:description ?campus }
+            OPTIONAL { ?address core:addressDepartment ?location }
+            OPTIONAL { ?address ands:addressLabel ?postalAddress }
+        } ORDER BY ?addressTitle
+    </query-select>
+ 
+    <query-collated>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX ands: &lt;http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#&gt;
+        
+       SELECT DISTINCT  ?subclass
+       			?address 
+                        ?addressTitle
+                        ?postalAddress
+                        ?campus
+                        ?location
+                         WHERE {
+            ?subject ?property ?address  
+            OPTIONAL { ?address rdfs:label ?addressTitle  }
+            OPTIONAL { ?address core:description ?campus }
+            OPTIONAL { ?address core:addressDepartment ?location }
+            OPTIONAL { ?address ands:addressLabel ?postalAddress }
+           
+            OPTIONAL { ?address a ?subclass .
+                       ?subclass rdfs:subClassOf core:Address 
+            } 
+        } ORDER BY ?subclass 
+    </query-collated>
+   
+    
+    <query-construct>
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        PREFIX ands: &lt;http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#&gt;
+         
+ 		CONSTRUCT { 
+            ?subject ?property ?address .
+            ?address ?addressProperty ?addressValue
+        } WHERE {
+            {
+               ?subject ?property ?address 
+            } UNION {
+               ?subject ?property ?address .
+               ?address ?addressProperty ?addressValue 
+            } UNION {
+               ?subject ?property ?address .
+               ?address rdfs:label ?addressTitle .
+               ?address core:description ?campus .
+               ?address core:addressDepartment ?location .
+               ?address ands:addressLabel ?postalAddress 
+            }
+        } 
+    </query-construct>
+    
+   
+              
+    <template>propStatement-personAddress.ftl</template>
+</list-view-config>

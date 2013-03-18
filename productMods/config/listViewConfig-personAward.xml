@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
+
+<!-- See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+    <query-select>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        
+        SELECT DISTINCT ?award 
+                        ?awardTitle
+                        ?dateTimeStart ?dateTimeEnd WHERE {
+            ?subject ?property ?award  
+            OPTIONAL { ?award rdfs:label ?awardTitle  }
+            OPTIONAL { ?award core:dateTimeInterval ?dateTimeInterval 
+                       OPTIONAL { ?dateTimeInterval core:start ?dateTimeStartValue .                    
+                                  ?dateTimeStartValue core:dateTime ?dateTimeStart 
+                       }
+                       OPTIONAL { ?dateTimeInterval core:end ?dateTimeEndValue .  
+                                  ?dateTimeEndValue core:dateTime ?dateTimeEnd  
+                       }
+            }
+        } ORDER BY DESC(?dateTimeEnd) DESC(?dateTimeStart) 
+    </query-select>
+ 
+    <query-collated>    
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX afn:  &lt;http://jena.hpl.hp.com/ARQ/function#&gt;
+        
+        SELECT DISTINCT ?subclass 
+                        ?award
+                        ?awardTitle    
+                        ?dateTimeStart ?dateTimeEnd WHERE {
+            ?subject ?property ?award 
+            OPTIONAL { ?award rdfs:label ?awardTitle } 
+            OPTIONAL { ?award core:dateTimeInterval ?dateTimeInterval 
+                       OPTIONAL { ?dateTimeInterval core:start ?dateTimeStartValue .                     
+                                  ?dateTimeStartValue core:dateTime ?dateTimeStart 
+                       }
+                       OPTIONAL { ?dateTimeInterval core:end ?dateTimeEndValue .   
+                                  ?dateTimeEndValue core:dateTime ?dateTimeEnd  
+                       }
+            }
+            OPTIONAL { ?award a ?subclass .
+                       ?subclass rdfs:subClassOf core:AwardReceipt 
+            } 
+        } ORDER BY ?subclass DESC(?dateTimeEnd) DESC(?dateTimeStart) 
+    </query-collated>
+       
+    <query-construct>
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;  
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;  
+        CONSTRUCT {
+            ?subclass rdfs:subClassOf core:AwardReceipt 
+        } WHERE {
+            ?subclass rdfs:subClassOf core:AwardReceipt 
+        }
+    </query-construct>
+    
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;
+        PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;    
+        CONSTRUCT { 
+            ?subject ?property ?award .
+            ?award ?awardProperty ?awardValue .
+        } WHERE {
+            {
+               ?subject ?property ?award 
+            } UNION {
+               ?subject ?property ?award .
+               ?award ?awardProperty ?awardValue 
+            } 
+        } 
+    </query-construct>
+    
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;   
+        CONSTRUCT { 
+            ?subject ?property ?award .  
+            ?award core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:start ?dateTimeStartValue .
+            ?dateTimeStartValue core:dateTime ?dateTimeStart 
+        } WHERE {
+            ?subject ?property ?award .  
+            ?award core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:start ?dateTimeStartValue .
+            ?dateTimeStartValue core:dateTime ?dateTimeStart 
+        } 
+    </query-construct>
+
+    <query-construct>
+        PREFIX core: &lt;http://vivoweb.org/ontology/core#&gt;    
+        CONSTRUCT { 
+            ?subject ?property ?award .  
+            ?award core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:end ?dateTimeEndValue .
+            ?dateTimeEndValue core:dateTime ?dateTimeEnd 
+        } WHERE {
+            ?subject ?property ?award .  
+            ?award core:dateTimeInterval ?dateTimeInterval .
+            ?dateTimeInterval core:end ?dateTimeEndValue .
+            ?dateTimeEndValue core:dateTime ?dateTimeEnd 
+        } 
+    </query-construct>
+              
+    <template>propStatement-personAward.ftl</template>
+</list-view-config>
