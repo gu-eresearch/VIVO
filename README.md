@@ -12,13 +12,24 @@ We reccomend that you follow the VIVO documentation in the links below, for in-d
 
 ### Developer / Administrator Documentation
 For installation/upgrade documentation for VIVO/Vitro software version 1.5, please see the VIVO Installation and Upgrade Guides located on this page: https://wiki.duraspace.org/display/VIVO/Install+Guide.  
-Specific 1.5 Install Guide: http://sourceforge.net/projects/vivo/files/Project%20Documentation/VIVO_Release_V1.5_Installation_Guide.pdf/download
-The VIVO/Vitro source code can be found on GitHub: https://github.com/vivo-project.
+
+Planning for VIVO Install: https://wiki.duraspace.org/display/VIVO/Planning+a+VIVO+Installation  
+Deplopying VIVO: https://wiki.duraspace.org/display/VIVO/Deploying+VIVO  
+Specific 1.5 Install Guide: http://sourceforge.net/projects/vivo/files/Project%20Documentation/VIVO_Release_V1.5_Installation_Guide.pdf/download  
+  
+  
+
+
+All VIVO/Vitro source code can be found on GitHub: https://github.com/vivo-project.
 
 ### User Documentation
 Please refer to all existing documentation created for VIVO and contained on the VIVO wiki: https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page  
 
- 
+Site Administrator Guide: https://wiki.duraspace.org/display/VIVO/Site+Administrator+Guide  
+Data Maintenance Issues: https://wiki.duraspace.org/display/VIVO/Data+Maintenance  
+SPARQL Resources:  https://wiki.duraspace.org/display/VIVO/SPARQL+Resources  
+
+
 ## Contact
 To contact the Research Hub project team, please jump to http://research-hub.griffith.edu.au/contact, fill out your enquiry, and we will get back to you as soon as possible.
 
