@@ -1,7 +1,7 @@
 # Griffith University's VIVO customisations
 
 This repository contains the customisations made by Griffith University as part of development of the Research Hub ( http://research-hub.griffith.edu.au ).
-The Research Hub is based on VIVO/Vitro software version 1.5.1 ( see below ), and requires installation of VIVO/Vitro to create a working instance.
+The Research Hub is based on VIVO/Vitro software version 1.5.1 ( see below section on VIVO ), and requires installation of VIVO/Vitro to create a working instance.
 
 The Research Hub also uses a customised version of MOAI ( https://pypi.python.org/pypi/MOAI/2.0.0 ) to enable a OAI-PMH interface for data discovery.
 Our MOAI customisations can be found here: https://github.com/gu-eresearch/VIVO_moai
