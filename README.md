@@ -6,12 +6,29 @@ The Research Hub is based on VIVO/Vitro software version 1.5.1 ( see below secti
 The Research Hub also uses a customised version of MOAI ( https://pypi.python.org/pypi/MOAI/2.0.0 ) to enable a OAI-PMH interface for data discovery.
 Our MOAI customisations can be found here: https://github.com/gu-eresearch/VIVO_moai
 
+The Griffith Research Hub was produced as part of ANDS funded project.
+
 ## Documentation
 The Research Hub does implement some customised user experiences in terms of imporved faceted search and enchanced editing templates, but has no major changes in regards to site administration and usage. 
 We reccomend that you follow the VIVO documentation in the links below, for in-depth information on installation, upgrade, administration and ontology management, as well as the excellent and very active vivo-dev-all mailing list mentioned below.
 
 ### Developer / Administrator Documentation
 For installation/upgrade documentation for VIVO/Vitro software version 1.5, please see the VIVO Installation and Upgrade Guides located on this page: https://wiki.duraspace.org/display/VIVO/Install+Guide.  
+
+Basic steps for deploying a VIVO 1.5 instance with Griffith's customisations in a linux/unix environment:
+(assumes working installations of Java, Tomcat 6, ant and git)
+
+1. Create directory for vivo source:  <code>mkdir vivo </code>
+2. Clone the Vitro core repository:  <code>git clone ......  Vitro</code>
+3. Clone the Griffith modifications repository: <code>git clone .... vivo</code>
+4. <code>cd vivo</code>
+5. Create symlink to vitro core files: <code>ln -s ../Vitro vitro-core</code>
+6. Modify your deploy.properties file to match your environment (see VIVO documentation for further details on this)
+7. Test a build of your VIVO instance:  <code>ant test</code>
+8. Compile and deploy VIVO instance: <code>ant all</code>
+9. Start your tomcat server
+10. Access your VIVO installation by pointing your browser to the designated VIVO url specified in deploy.properties
+
 
 Planning for VIVO Install: https://wiki.duraspace.org/display/VIVO/Planning+a+VIVO+Installation  
 Deplopying VIVO: https://wiki.duraspace.org/display/VIVO/Deploying+VIVO  
@@ -23,6 +40,7 @@ Specific 1.5 Install Guide: http://sourceforge.net/projects/vivo/files/Project%2
 All VIVO/Vitro source code can be found on GitHub: https://github.com/vivo-project.
 
 ### User Documentation
+
 Please refer to all existing documentation created for VIVO and contained on the VIVO wiki: https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page  
 
 Site Administrator Guide: https://wiki.duraspace.org/display/VIVO/Site+Administrator+Guide  
