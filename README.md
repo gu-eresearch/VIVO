@@ -6,7 +6,7 @@ The Research Hub is based on VIVO/Vitro software version 1.5.1 ( see below secti
 The Research Hub also uses a customised version of MOAI ( https://pypi.python.org/pypi/MOAI/2.0.0 ) to enable a OAI-PMH interface for data discovery.
 Our MOAI customisations can be found here: https://github.com/gu-eresearch/VIVO_moai
 
-The Griffith Research Hub was produced as part of ANDS funded project.
+The Griffith Research Hub was produced as part of ANDS funded projects.
 
 ## Documentation
 The Research Hub does implement some customised user experiences in terms of imporved faceted search and enchanced editing templates, but has no major changes in regards to site administration and usage. 
