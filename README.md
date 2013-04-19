@@ -15,13 +15,14 @@ We reccomend that you follow the VIVO documentation in the links below, for in-d
 ### Developer / Administrator Documentation
 For installation/upgrade documentation for VIVO/Vitro software version 1.5, please see the VIVO Installation and Upgrade Guides located on this page: https://wiki.duraspace.org/display/VIVO/Install+Guide.  
 
-Basic steps for deploying a VIVO 1.5 instance with Griffith's customisations in a linux/unix environment:
-(assumes working installations of Java, Tomcat 6, ant and git)
+Below are some very basic steps for deploying a VIVO 1.5 instance with Griffith's customisations in a linux/unix environment:
+(assumes working installations of Java, Tomcat 6, ant and git).  The only real difference from building a vanilla VIVO instance
+from GitHub is that instead you are cloning Griffiths VIVO repository instead of the vanilla VIVO repository.
 
 1. Create directory for vivo source:  <code>mkdir vivo </code>
-2. Clone the Vitro core repository:  <code>git clone ......  Vitro</code>
-3. Clone the Griffith modifications repository: <code>git clone .... vivo</code>
-4. <code>cd vivo</code>
+2. Clone the Vitro core repository:  <code>git clone https://github.com/vivo-project/Vitro.git  Vitro</code>
+3. Clone the Griffith modifications repository: <code>git clone https://github.com/gu-eresearch/VIVO.git vivo</code>
+4. Enter the vivo directory: <code>cd vivo</code>
 5. Create symlink to vitro core files: <code>ln -s ../Vitro vitro-core</code>
 6. Modify your deploy.properties file to match your environment (see VIVO documentation for further details on this)
 7. Test a build of your VIVO instance:  <code>ant test</code>
@@ -40,8 +41,9 @@ Specific 1.5 Install Guide: http://sourceforge.net/projects/vivo/files/Project%2
 All VIVO/Vitro source code can be found on GitHub: https://github.com/vivo-project.
 
 ### User Documentation
-
-Please refer to all existing documentation created for VIVO and contained on the VIVO wiki: https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page  
+The only functional change to the user experience of VIVO based on Griffiths modifications, is a different theme (display layout) including
+a enhanced faceted search interface.  Otherwise, the experience of using and administering VIVO with Griffith's modifications are similar to that of a vanilla VIVO instance.
+Therefore, for detailed documentation, please refer to all existing documentation created for VIVO and contained on the VIVO wiki: https://wiki.duraspace.org/display/VIVO/VIVO+Main+Page  
 
 Site Administrator Guide: https://wiki.duraspace.org/display/VIVO/Site+Administrator+Guide  
 Data Maintenance Issues: https://wiki.duraspace.org/display/VIVO/Data+Maintenance  
