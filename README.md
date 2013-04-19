@@ -17,7 +17,7 @@ For installation/upgrade documentation for VIVO/Vitro software version 1.5, plea
 
 Below are some very basic steps for deploying a VIVO 1.5 instance with Griffith's customisations in a linux/unix environment:
 (assumes working installations of Java, Tomcat 6, ant and git).  The only real difference from building a vanilla VIVO instance
-from GitHub is that instead you are cloning Griffiths VIVO repository instead of the vanilla VIVO repository.
+from GitHub is that you are cloning Griffiths VIVO repository instead of the vanilla VIVO repository.
 
 1. Create directory for vivo source:  <code>mkdir vivo </code>
 2. Clone the Vitro core repository:  <code>git clone https://github.com/vivo-project/Vitro.git  Vitro</code>
